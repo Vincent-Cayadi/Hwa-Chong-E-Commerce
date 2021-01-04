@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Apple-Font;
+    font-style:  normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url(../Font/Apple-Font/SF-Pro-Ultralight.otf) format(otf),
+}
+@font-face {
+    font-family: Apple-Font;
+    font-style:  italic;
+    font-weight: 100;
+    font-display: swap;
+    src: url(../Font/Apple-Font/SF-Pro-UltralightItalic.otf) format(otf),
+}
+
+
+@font-face {
+    font-family: Apple-Font;
+    font-style:  normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(../Font/Apple-Font/SF-Pro-Thin.otf) format(otf),
+}
+@font-face {
+    font-family: Apple-Font;
+    font-style:  italic;
+    font-weight: 200;
+    font-display: swap;
+    src: url(../Font/Apple-Font/SF-Pro-ThinItalic.otf) format(otf),
+}
+
+
+@font-face {
+    font-family: Apple-Font;
+    font-style:  normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../Font/Apple-Font/SF-Pro-Light.otf) format(otf),
+}
+@font-face {
+    font-family: Apple-Font;
+    font-style:  italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../Font/Apple-Font/SF-Pro-LightItalic.otf) format(otf),
+}
+
+
+@font-face {
+    font-family: Apple-Font;
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../Font/Apple-Font/SF-Pro-Regular.otf) format(otf),
+}
+@font-face {
+    font-family: Apple-Font;
+    font-style:  italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../Font/Apple-Font/SF-Pro-RegularItalic.otf) format(otf),
+}
+
+
+@font-face {
+    font-family: Apple-Font;
+    font-style:  normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../Font/Apple-Font/SF-Pro-Medium.otf) format(otf),
+}
+@font-face {
+    font-family: Apple-Font;
+    font-style:  italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../Font/Apple-Font/SF-Pro-MediumItalic.otf) format(otf),
+}
+
+
+@font-face {
+    font-family: Apple-Font;
+    font-style:  normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../Font/Apple-Font/SF-Pro-Semibold.otf) format(otf),
+}
+@font-face {
+    font-family: Apple-Font;
+    font-style:  italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../Font/Apple-Font/SF-Pro-SemiboldItalic.otf) format(otf),
+}
+
+@font-face {
+    font-family: Apple-Font;
+    font-style:  normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../Font/Apple-Font/SF-Pro-Bold.otf) format(otf),
+}
+@font-face {
+    font-family: Apple-Font;
+    font-style:  italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../Font/Apple-Font/SF-Pro-BoldItalic.otf) format(otf),
+}
+
+
+@font-face {
+    font-family: Apple-Font;
+    font-style:  normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(../Font/Apple-Font/SF-Pro-Heavy.otf) format(otf),
+}
+@font-face {
+    font-family: Apple-Font;
+    font-style:  italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url(../Font/Apple-Font/SF-Pro-HeavyItalic.otf) format(otf),
+}
+
+
+@font-face {
+    font-family: Apple-Font;
+    font-style:  normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(../Font/Apple-Font/SF-Pro-Black.otf) format(otf),
+}
+@font-face {
+    font-family: Apple-Font;
+    font-style:  italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url(../Font/Apple-Font/SF-Pro-BlackItalic.otf) format(otf),
+}
