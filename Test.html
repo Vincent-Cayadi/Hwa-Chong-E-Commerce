@@ -1,48 +1,80 @@
-<!DOCTYPE html>
-<html>
-<head>
 <style>
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
+  body {
+    font-family: sans-serif;
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 0.9375rem;   
 }
-
-.price {
-  color: grey;
-  font-size: 22px;
+small {
+    font-style: italic;
 }
-
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
+article {
+    display: flex;
+    flex-direction: column;
 }
-
-.card button:hover {
-  opacity: 0.7;
+img {
+    max-width: 100%;
+    display: block;
+    align-self: center;
+}
+.switch {
+    align-self: flex-end;
+    margin: 0.9375rem;
+}
+.inner-switch {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #555;
+    border-radius: 1.25rem;
+    width: 3.125rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.1875rem;
+    margin-left: 0.3125rem;
+.dark * {
+    background-color: #222;
+    color: #e6e6e6;
+    border-color: #e6e6e6;
+}
 }
 </style>
+<script>
+  $( ".inner-switch" ).on("click", function() {
+    if( $( "body" ).hasClass( "dark" )) {
+      $( "body" ).removeClass( "dark" );
+      $( ".inner-switch" ).text( "OFF" );
+    } else {
+      $( "body" ).addClass( "dark" );
+      $( ".inner-switch" ).text( "ON" );
+    }
+});
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo | Dark Mode in CSS</title>
+    <link rel="stylesheet" href="style.css">  
 </head>
-<body>
-
-<h2 style="text-align:center">Product Card</h2>
-
-<div class="card">
-  <img src="/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>Tailored Jeans</h1>
-  <p class="price">$19.99</p>
-  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-  <p><button>Add to Cart</button></p>
-</div>
-
+<body class="dark">
+    <div class="switch">Dark mode:              
+        <span class="inner-switch">OFF</span>
+    </div>
+    <h1 class="title">The Best Recipes of All Time</h1>
+    <article>
+        <h1>Raspberry Cake</h1>
+        <p><small>Created with Cupcake Ipsum</small></p>
+        <p>...</p>
+        <img src="images/cake.jpg">
+        <p>...</p>
+    </article>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

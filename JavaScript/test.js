@@ -6,5 +6,9 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 1000,
         variableWidth: true,
+        adaptiveHeight: false,
+        accessibility: false,
+        arrows: false,
+        
     });
 });
