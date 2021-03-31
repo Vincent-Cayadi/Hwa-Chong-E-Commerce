@@ -12,7 +12,47 @@ html{
     color: orange !important;
   }
 
+/*Search https://www.youtube.com/watch?v=UOGvJhvLUg0*/
+.container .input{
+	border: 0;
+	outline:none;
+	color: black;
+}
+
+/*Align the thing to the center*/
+.search_wrap{
+	width: 500px;
+	margin: 38px auto;
+}
+/*Align the thing to the center*/
+
+.search_wrap .search_box{
+	position: relative;
+	width: 500px;
+	height: 60px;
+}
+
+.search_wrap .search_box .input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px;
+	border-radius: 3px;
+	font-size: 18px;
+}
+
+/*Have a padding between the words the the box*/
+.search_wrap.search_wrap_1 .search_box .input{
+	padding-right: 80px;
+}
+/*Have a padding between the words the the box*/
+
+/*Search*/
+
 .navbar{
+    font-size: 24px;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -70,6 +110,18 @@ nav{
 /*Carousel the sliding thingy*/
 
 /*FP*/
+.np p{
+    color: oldlace;
+    font-size: calc(24px + (24 - 16)*(100vw - 320px)/(1920 - 320));
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration-line: underline;
+    text-align: center;
+}
+
+.fp{
+    align-items: center;
+}
+
 .fp p{
     color: oldlace;
     font-size: calc(24px + (24 - 16)*(100vw - 320px)/(1920 - 320));
@@ -77,3 +129,80 @@ nav{
     text-decoration-line: underline;
     text-align: center;
 }
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    }
+
+.card{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: oldlace;
+    width: 24%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius:10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: .4s;
+}
+
+.card:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    transform: translate(0px, -8px);
+    transition: .6s;
+}
+
+.card h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.card p{
+    text-align: center;
+    color: #b2bec3;
+    padding: 0 8px;
+    }
+.card h6{
+    font-size: 26px;
+    text-align: center;
+    color: #222f3e;
+    margin: 0;
+    }
+
+.card button{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border:0px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    }
+.buy-1{
+    background-color: #2183a2;
+    }
+@media(max-width: 1000px){
+    .card{
+    width: 46%;
+    }
+    }
+@media(max-width: 750px){
+    .card{
+    width: 100%;
+    }
+    }
