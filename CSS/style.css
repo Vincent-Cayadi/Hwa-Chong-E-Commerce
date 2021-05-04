@@ -21,17 +21,6 @@ nav{
     
 }
 
-.right-side{
-    float: right;
-}
-
-.right-side a{
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 2px;
-}
-
 input[type=text]{
     border: 2px solid red;
     border-radius: 5px;
@@ -55,57 +44,10 @@ input[type=text]{
 }
 /*Carousel the sliding thingy*/
 
-.ps{
+.na{
     text-align: center;
 }
 
-.head{
-    font-size: 24px;
-    text-decoration: underline;
-    text-decoration-color: black;
-    margin-bottom: 25px;
-}
+.gallery{
 
-.container{
-    display: flex;
-    margin-right: 100px;
-    margin-left: 100px;
-}
-
-.card{
-    padding: 10px;
-    width: 50%;
-    flex: 1;
-    transition: transform 250ms;
-}
-
-.card div{
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-.card img{
-    height: 200px;
-}
-
-.card button{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border-radius: 2px;
-}
-
-.card:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-/*Blue Highlight*/
-
-::selection {
-    color: none;
-    background: none;
-}
-/* For Mozilla Firefox */
-::-moz-selection {
-    color: none;
-    background: none;
 }
