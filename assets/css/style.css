@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 html{
     font-family: 'Lato', sans-serif;
@@ -6,30 +6,62 @@ html{
 }
 
 .navbar{
+    overflow: hidden;
     font-size: 16px;
     text-align: center;
     margin-top: 20px;
 }
 
-nav{
-    display: flex;
-    text-align: center;
-    margin: 10px 10px;
+.nav-bar{
+    float: right;
 }
 
 .logo{
-    
+    float: left;
+    margin: 20px;
 }
 
 .right-side{
-    float: right;
+    margin: auto 0px;
+}
+
+.right-side ul{
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 600px;
+}
+
+.right-side li{
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
 }
 
 .right-side a{
     color: black;
     text-decoration: none;
-    font-size: 20px;
-    padding: 2px;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+
+.right-side a::after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: red;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.right-side a:hover::after { 
+    width: 100%; 
+    left: 0; 
 }
 
 input[type=text]{
@@ -42,7 +74,7 @@ input[type=text]{
 
 /*Carousel the sliding thingy*/
 .carousel{
-    margin: auto auto;
+    margin: 20px 100px;
     height: auto;
 
 }
@@ -68,11 +100,12 @@ input[type=text]{
 
 .container{
     display: flex;
-    margin-right: 100px;
-    margin-left: 100px;
+    text-align: center;
+    margin: auto 100px;
 }
 
 .card{
+    border-radius: 5px;
     padding: 10px;
     width: 50%;
     flex: 1;
