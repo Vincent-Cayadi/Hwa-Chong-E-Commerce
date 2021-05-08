@@ -5,6 +5,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/consortium.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+        <script type="text/javascript" src="assets/js/tab.js"></script>
     </head>
     <body>
         <div class="navbar">
@@ -21,11 +25,11 @@
                 </div>
                 <div class="nav-bar">
                     <ul class="right-side">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
                         <li>                            
                             <a href="consortium.html">Consortiums</a>   
-                        </li>
-                        <li>
-                            <a href="categories.html">Categories</a>
                         </li>
                         <li>
                             <a href="collabs.html">Collabs</a>
@@ -38,5 +42,23 @@
             </nav>
         </div>
         <hr>
+        <div class="tab">
+            <button class="tablinks" onclick="opencat(event, 'aphelion')">Aphelion</button>
+            <button class="tablinks" onclick="opencat(event, 'ispark')">Ispark</button>
+            <button class="tablinks" onclick="opencat(event, 'ortus')">Ortus</button>
+            <button class="tablinks" onclick="opencat(event, 'proed')">ProEd</button>
+        </div>
+        <div id="aphelion" class="tabcontent">
+            Aphelion
+        </div>
+        <div id="ispark" class="tabcontent">
+            Ispark
+        </div>
+        <div id="ortus" class="tabcontent">
+            Ortus
+        </div>
+        <div id="proed" class="tabcontent">
+            ProEd
+        </div>
     </body>
 </html>
