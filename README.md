@@ -3,22 +3,16 @@ A website that sells merch
 
 Timeline:
 	
-February-April 	     April-July         July-October
+February-April: Get the home page of the website completed
+		Do some research on how other ecommerce websites does their payment, security and 		delivery
+		Research other ecommerce websites design. 
 
-	 |		  |		     |
-     ----|----------------|------------------|----
-	 | 		  |                  |
-Get the home page   Finish the design       Confirm the payment and
-of the website      of website including    delivery method
-completed.          checkout page and 
-                    seller page etc         Finalise the website 
-Do some research                            in general. 
-on how other ecommerce
-websites do their payment
-security and delivery
 
-Research other ecommerce
-website design
+April-July: Finish the design of website including the checkout page and seller page etc
+
+
+July-October: Confirm the payment and delivery method
+	      Finalise the website in general
 
 
 
