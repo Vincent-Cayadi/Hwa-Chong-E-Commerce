@@ -1,0 +1,38 @@
+html{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+p{
+    text-align: center;
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    left: 250px;
+    line-height: 2;
+
+
+}
+ 
+h1{
+    text-align: center;
+    padding: 30px;    
+    width: 250px;
+    position:relative;
+    left:450px;
+    text-decoration: underline;
+}
+
+span{
+    background: url(https://sites.google.com/site/hciwikibook20/_/rsrc/1326794899731/home/our-core-values/Hwa_Chong_Institution_Logo.jpeg?height=200&width=200);
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+}
+
+  
+
+
+
+
