@@ -1,8 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html{
     font-family: 'Lato', sans-serif;
     font-size: 16px;
+}
+
+hr{
+    color: red;
+}
+
+body{
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .navbar{
@@ -14,6 +37,8 @@ html{
 
 .nav-bar{
     float: right;
+    margin-bottom: 5px;
+    margin-right: 8px;
 }
 
 .logo{
@@ -22,11 +47,10 @@ html{
 }
 
 .right-side{
-    margin: auto 0px;
+    margin: 0px 0px;
 }
 
 .right-side ul{
-    padding: 0; 
     list-style: none; 
     display: table;
     width: 600px;
@@ -65,11 +89,10 @@ html{
 }
 
 input[type=text]{
-    border: 2px solid red;
-    border-radius: 5px;
-    width: 50%;
-    padding: 12px 20px;
-    margin: auto auto;
+    float: left;
+    text-align: left;
+    margin: 20px;
+    padding: 4px;
 }
 
 /*Carousel the sliding thingy*/
@@ -101,13 +124,12 @@ input[type=text]{
 .container{
     display: flex;
     text-align: center;
-    margin: auto 100px;
+    margin: 20px 100px;
 }
 
 .card{
     border-radius: 5px;
     padding: 10px;
-    width: 50%;
     flex: 1;
     transition: transform 250ms;
 }
@@ -122,8 +144,12 @@ input[type=text]{
 }
 
 .card button{
+    padding: 3px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 1px solid;
     border-radius: 2px;
+    margin-bottom: 10px;
+    background-color: white;
 }
 
 .card:hover{
