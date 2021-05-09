@@ -22,7 +22,7 @@ h1{
     --gradient: linear-gradient(-45deg, #ee6352, purple, #ee6352);
   
   }
-
+  
 body {
     font-family: basic-sans, sans-serif;
     min-height: 100vh;
