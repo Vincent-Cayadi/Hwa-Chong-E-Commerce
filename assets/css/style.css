@@ -39,6 +39,7 @@ body{
     float: right;
     margin-bottom: 5px;
     margin-right: 8px;
+    margin-top: 0px;
 }
 
 .logo{
@@ -93,6 +94,8 @@ input[type=text]{
     text-align: left;
     margin: 20px;
     padding: 4px;
+    width: 64%;
+    border-style: none;
 }
 
 /*Carousel the sliding thingy*/
