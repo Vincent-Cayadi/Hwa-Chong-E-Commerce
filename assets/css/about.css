@@ -9,6 +9,16 @@ p{
     line-height: 2;
     font-size: 20px;
 }
+
+.hi{
+    border:solid black 2px;
+    width:50%;
+    position: relative;
+    left:25%;
+    border-radius: 25% 0;
+    text-shadow: 0 2px 5px rgba(0,0,0,.5);
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
  
 h1{
     text-align: center;
@@ -28,7 +38,6 @@ h2{
     width:75%;
     left:12.5%;
     position:relative;
-    font-size: 10;
 
 }   
 
@@ -40,12 +49,18 @@ h2{
 .i1{
     position:absolute;
     top:0px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+    height:340px;
+    width:450px;
 }
 
 .i2{
     position:absolute;
     top:0px;
     right:0px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+    height:340px;
+    width:450px;
 }
 
 
@@ -53,12 +68,18 @@ h2{
     position:absolute;
     bottom:0px;
     left:0px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+    height:340px;
+    width:450px;
 }
 
 .i4{
     position:absolute;
     bottom:0px;
     right:0px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+    height:340px;
+    width:450px;
 
 }
 
@@ -69,6 +90,7 @@ img{
     width:100px;
     height:100px;
 }
+
 
 
 
