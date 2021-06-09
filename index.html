@@ -1,123 +1,145 @@
 <!DOCTYPE html>
-<html lang ='en'>
-    <head>
-        <link rel="shortcut icon" href="assets/images/cropped-hwa-chong-favicon.png" type="image/x-icon">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ProjMerk</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>
-        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-        <script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>
-        <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
-        <script type="text/javascript" src="assets/js/carousel.js"></script>
-    </head>
-    <body>
-        <div class="navbar">
-            <nav>
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="" alt="logo">
-                    </a>
-                </div>
-                <div>
-                    <form action="" method="post">
-                        <input type="text" name="search" placeholder="Search something">
-                    </form>
-                </div>
-                <div class="nav-bar">
-                    <ul class="right-side">
-                        <li>                            
-                            <a href="consortium.html">Consortiums</a>   
-                        </li>
-                        <li>
-                            <a href="collabs.html">Collabs</a>
-                        </li>
-                        <li>
-                            <a href="checkout.html">Checkout out</a>
-                        </li>
-                        <li>
-                            <a href="sign.html">Sign In/Login</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <hr>
-        <div class="carousel">
-            <div> 
-                <img class = "wrapper-image" src="assets/images/index.jpg" alt="Random">
-            </div>
-            <div>
-                <img class = "wrapper-image" src="assets/images/index2.jpg" alt="Random">
-            </div>
-            <div>
-                <img class = "wrapper-image" src="assets/images/index3.jpg" alt="Pepe">
-            </div>
-        </div>
-        <div class="ps">
-            <div class="head">
-                <p">New Arrivals</p>
-            </div>
-            <div class="container">
-                <div class="card">
-                    <img src="assets/images/Jacket.jpg">
-                    <p>Aphelion Jacket</p>
-                    <div>$10.00</div>
-                    <button class="buy-1">Buy Now</button>
-                </div>
-                <div class="card">
-                    <img src="assets/images/Jacket.jpg">
-                    <p>Ispark Jacket</p>
-                    <div>$10.00</div>
-                    <button class="buy-1">Buy Now</button>
-                </div>
-                <div class="card">
-                    <img src="assets/images/Jacket.jpg">
-                    <p>Ortus Jacket</p>
-                    <div>$10.00</div>
-                    <button class="buy-1">Buy Now</button>
-                </div>
-                <div class="card">
-                    <img src="assets/images/Jacket.jpg">
-                    <p>ProED Jacket</p>
-                    <div>$10.00</div>
-                    <button class="buy-1">Buy Now</button>
-                </div>
-            </div>
-        </div>
-        <div class="ps">
-            <div class="head">
-                <p>Featured Products</p> 
-            </div>
-            <div class="container">
-                <div class="card">
-                    <img src="assets/images/Jacket.jpg">
-                    <p>Aphelion Jacket</p>
-                    <div>$10.00</div>
-                    <button class="buy-1">Buy Now</button>
-                </div>
-                <div class="card">
-                    <img src="assets/images/Jacket.jpg">
-                    <p>Ispark Jacket</p>
-                    <div>$10.00</div>
-                    <button class="buy-1">Buy Now</button>
-                </div>
-                <div class="card">
-                    <img src="assets/images/Jacket.jpg">
-                    <p>Ortus Jacket</p>
-                    <div>$10.00</div>
-                    <button class="buy-1">Buy Now</button>
-                </div>
-                <div class="card">
-                    <img src="assets/images/Jacket.jpg">
-                    <p>ProED Jacket</p>
-                    <div>$10.00</div>
-                    <button class="buy-1">Buy Now</button>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" href="assets/images/cropped-hwa-chong-favicon.png" type="image/x-icon">
+	<meta charset="UTF-8">
+	<title>ProjMerk</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.css">
+    <script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/carousel.js"></script>
+</head>
+<body>
 
+	<div class="navbar">
+		<nav>
+			<div class="logo">
+				<a href="index.html">
+					<img src="" alt="logo">
+				</a>
+			</div>
+			<div>
+				<form action="" method="post">
+					<input type="text" name="search" placeholder="Search something">
+				</form>
+			</div>
+			<div>
+				<h1 id="cart"><i class=" fa fa-shopping-cart"></i></h1>
+			</div>
+			<div class="nav-bar">
+				<ul class="right-side">
+					<li>                            
+						<a href="consortium.html">Consortiums</a>   
+					</li>
+					<li>
+						<a href="collabs.html">Collabs</a>
+					</li>
+					<li>
+						<a href="checkout.html">Checkout out</a>
+					</li>
+					<li>
+						<a href="sign.html">Sign In/Login</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	
+	<hr>
+	<div class="carousel">
+		<div> 
+			<img class = "wrapper-image" src="assets/images/index.jpg" alt="Random">
+		</div>
+		<div>
+			<img class = "wrapper-image" src="assets/images/index2.jpg" alt="Random">
+		</div>
+		<div>
+			<img class = "wrapper-image" src="assets/images/index3.jpg" alt="Pepe">
+		</div>
+	</div>
+	<section>
+	<div class="ps">
+		<div class="head">
+			<p">New Arrivals</p>
+		</div>
+		<div class="container">
+			<div class="card">
+				<img src="assets/images/Jacket.jpg">
+				<p>Aphelion Jacket</p>
+				<h6>$10.00</h6>
+				<span></span>
+				<button class="buy-1">Buy Now</button>
+			</div>
+			<div class="card">
+				<img src="assets/images/Jacket.jpg">
+				<p>Ispark Jacket</p>
+				<h6>$10.00</h6>
+				<span></span>
+				<button class="buy-1">Buy Now</button>
+			</div>
+			<div class="card">
+				<img src="assets/images/Jacket.jpg">
+				<p>Ortus Jacket</p>
+				<h6>$10.00</h6>
+				<span></span>
+				<button class="buy-1">Buy Now</button>
+			</div>
+			<div class="card">
+				<img src="assets/images/Jacket.jpg">
+				<p>ProED Jacket</p>
+				<h6>$10.00</h6>
+				<span></span>
+				<button class="buy-1">Buy Now</button>
+			</div>
+		</div>
+	</div>
+	<div class="ps">
+		<div class="head">
+			<p>Featured Products</p> 
+		</div>
+		<div class="container">
+			<div class="card">
+				<img src="assets/images/Jacket.jpg">
+				<p>Aphelion Jacket</p>
+				<h6>$10.00</h6>
+				<span></span>
+				<button class="buy-1">Buy Now</button>
+			</div>
+
+			<div class="card">
+				<img src="assets/images/Jacket.jpg">
+				<p>Ispark Jacket</p>
+				<h6>$10.00</h6>
+				<span></span>
+				<button class="buy-1">Buy Now</button>
+			</div>
+
+			<div class="card">
+				<img src="assets/images/Jacket.jpg">
+				<p>Ortus Jacket</p>
+				<h6>$10.00</h6>
+				<span></span>
+				<button class="buy-1">Buy Now</button>
+			</div>
+
+			<div class="card">
+				<img src="assets/images/Jacket.jpg">
+				<p>ProED Jacket</p>
+				<h6>$10.00</h6>
+				<span></span>
+				<button onClick= "addCart" class="buy-1">Buy Now</button>
+			</div>
+			
+		</div>
+	</div>
+	</section>
+	<div class="select">
+
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="assets/js/main.js"></script>
