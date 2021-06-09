@@ -12,7 +12,9 @@ April-July: Finish the design of website including the checkout page and seller 
 
 
 July-October: Confirm the payment and delivery method
-	      Finalise the website in general
+	      Finalise the website in general.
+
+
 
 
 
