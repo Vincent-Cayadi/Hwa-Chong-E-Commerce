@@ -1,7 +1,7 @@
 const data= [
     {
         id : 0,
-        img : '/assets/images/Jacket.jpg',
+        img : '/Website-Backup/assets/images/Jacket.jpg',
         name : 'Aphelion Jacket',
         price : 10,
         save : 25,
@@ -10,7 +10,7 @@ const data= [
     },
     {
         id : 1,
-        img : '/assets/images/Jacket.jpg',
+        img : '/Website-Backup/assets/images/Jacket.jpg',
         name : 'Ispark Jacket',
         price : 10,
         save : 50,
@@ -19,7 +19,7 @@ const data= [
     },
     {
         id : 2,
-        img : '/assets/images/Jacket.jpg',
+        img : '/Website-Backup/assets/images/Jacket.jpg',
         name : 'Ortus Jacket',
         price : 10,
         save : 50,
@@ -28,7 +28,7 @@ const data= [
     },
     {
         id : 3,
-        img : '/assets/images/Jacket.jpg',
+        img : '/Website-Backup/assets/images/Jacket.jpg',
         name : 'ProEd Jacket',
         price : 10,
         save : 50,
@@ -37,7 +37,7 @@ const data= [
     },
     {
         id : 4,
-        img : '/assets/images/Jacket.jpg',
+        img : '/Website-Backup/assets/images/Jacket.jpg',
         name : 'Aphelion Jacket',
         price : 10,
         save : 50,
@@ -46,7 +46,7 @@ const data= [
     },
     {
         id : 5,
-        img : '/assets/images/Jacket.jpg',
+        img : '/Website-Backupv/assets/images/Jacket.jpg',
         name : 'Ispark Jacket',
         price : 10,
         save : 50,
@@ -55,7 +55,7 @@ const data= [
     },
     {
         id : 6,
-        img : '/assets/images/Jacket.jpg',
+        img : '/Website-Backup/assets/images/Jacket.jpg',
         name : 'Ortus Jacket',
         price : 10,
         save : 50,
@@ -64,7 +64,7 @@ const data= [
     },
     {
         id : 7,
-        img : '/assets/images/Jacket.jpg',
+        img : '/Website-Backup/assets/images/Jacket.jpg',
         name : 'ProEd Jacket',
         price : 10,
         save : 50,
