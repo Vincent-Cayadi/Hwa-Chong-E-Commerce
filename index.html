@@ -28,11 +28,7 @@
 					<input type="text" name="search" placeholder="Search something">
 				</form>
 			</div>
-			<div class="nav-responsive">
-				<div class="access">
-					<a href="#" id="cart"><i class="fa fa-shopping-cart"></i></a>
-				</div>
-			</div>
+			
 			<div class="nav-bar">
 				<ul class="right-side">
 					<li>
@@ -49,6 +45,13 @@
 					</li>
 					<li>
 						<a href="sign.html">Sign In/Login</a>
+					</li>
+					<li>
+						<div class="nav-responsive">
+							<div class="access">
+								<a href="#" id="cart"><i class="fa fa-shopping-cart"></i></a>
+							</div>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -175,7 +178,7 @@
 		</div>
 
 		<div id="cart-container">
-			<p id="cart-title">Your <strong>Cart</strong></p id="cart-title">
+			<p id="cart-title">Your Cart</p id="cart-title">
 			<div id="empty-cart">
 				<h1>Your Cart is Empty...</h1>
 			</div>
@@ -184,7 +187,7 @@
 				<div class="cart-column">
 					<h3>Product</h3>
 					<h3>Product Name</h3>
-					<h3>Total </h3>
+					<h3>Cost </h3>
 					<h3>Quantity</h3>
 					<h3>Remove</h3>
 				</div>
@@ -194,7 +197,9 @@
 					<h3 id="total-items"></h3>
 					<h2 id="total-amount"></h2>
 					<h3 id="you-saved"></h3>
+					<button class="payment" onclick="location.href='payment.html'">Pay</button>
 				</div>
+				
 			</div>
 		</div>
 	</body>

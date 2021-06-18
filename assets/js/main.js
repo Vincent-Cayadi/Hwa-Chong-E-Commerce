@@ -4,7 +4,7 @@ const data= [
         img : '/Website-Backup/assets/images/Jacket.jpg',
         name : 'Aphelion Jacket',
         price : 10,
-        save : 25,
+        save : 0,
         delievery : 'In 3 - 4 days',
         itemInCart: false
     },
@@ -13,7 +13,7 @@ const data= [
         img : '/Website-Backup/assets/images/Jacket.jpg',
         name : 'Ispark Jacket',
         price : 10,
-        save : 50,
+        save : 0,
         delievery : 'In 3 - 4 days',
         itemInCart: false
     },
@@ -22,7 +22,7 @@ const data= [
         img : '/Website-Backup/assets/images/Jacket.jpg',
         name : 'Ortus Jacket',
         price : 10,
-        save : 50,
+        save : 0,
         delievery : 'In 3 - 4 days',
         itemInCart: false
     },
@@ -31,7 +31,7 @@ const data= [
         img : '/Website-Backup/assets/images/Jacket.jpg',
         name : 'ProEd Jacket',
         price : 10,
-        save : 50,
+        save : 0,
         delievery : 'In 3 - 4 days',
         itemInCart: false
     },
@@ -40,7 +40,7 @@ const data= [
         img : '/Website-Backup/assets/images/Jacket.jpg',
         name : 'Aphelion Jacket',
         price : 10,
-        save : 50,
+        save : 0,
         delievery : 'In 3 - 4 days',
         itemInCart: false
     },
@@ -49,7 +49,7 @@ const data= [
         img : '/Website-Backupv/assets/images/Jacket.jpg',
         name : 'Ispark Jacket',
         price : 10,
-        save : 50,
+        save : 0,
         delievery : 'In 3 - 4 days',
         itemInCart: false
     },
@@ -58,7 +58,7 @@ const data= [
         img : '/Website-Backup/assets/images/Jacket.jpg',
         name : 'Ortus Jacket',
         price : 10,
-        save : 50,
+        save : 0,
         delievery : 'In 3 - 4 days',
         itemInCart: false
     },
@@ -67,7 +67,7 @@ const data= [
         img : '/Website-Backup/assets/images/Jacket.jpg',
         name : 'ProEd Jacket',
         price : 10,
-        save : 50,
+        save : 0,
         delievery : 'In 3 - 4 days',
         itemInCart: false
     },
