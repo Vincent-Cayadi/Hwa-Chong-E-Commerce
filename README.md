@@ -11,7 +11,7 @@ February-April: Get the home page of the website completed
 April-July: Finish the design of website including the checkout page and seller page etc
 
 
-July-October: Confirm the payment and delivery method
+July-August: Confirm the payment and delivery method
 	      Finalise the website in general.
 
 
