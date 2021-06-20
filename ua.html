@@ -4,78 +4,36 @@
         <link rel="shortcut icon" href="assets/images/cropped-hwa-chong-favicon.png" type="image/x-icon">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ProjMerk </title>
+        <title>Cotton Road</title>
         <link rel="stylesheet" type="text/css" href="assets/css/ua.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet"> 
+        <script type="text/javascript" src="assets/js/ua.js"></script>
     </head>
     <body>
-        <div class="back">
-            <a href="index.html">
-                Back 
-            </a>
-        </div>
-        <div class="username">
-            Hello <span>Vincent Cayadi,</span>
-        </div>
-        <hr>
-        <div class="bp">
-            Products You Bought
-        </div>
         <div class="container">
-            <div class="card">
-                <img src="assets/images/Jacket.jpg">
-                <p>Aphelion Jacket</p>
-                <div>$10.00</div>
-                <button class="buy-1">Buy Now</button>
+            <div class="background-info">
+                <div class="pfp">
+
+                </div>
+                <div class="name">
+
+                </div>
             </div>
-            <div class="card">
-                <img src="assets/images/Jacket.jpg">
-                <p>Ispark Jacket</p>
-                <div>$10.00</div>
-                <button class="buy-1">Buy Now</button>
-            </div>
-            <div class="card">
-                <img src="assets/images/Jacket.jpg">
-                <p>Ortus Jacket</p>
-                <div>$10.00</div>
-                <button class="buy-1">Buy Now</button>
-            </div>
-            <div class="card">
-                <img src="assets/images/Jacket.jpg">
-                <p>ProED Jacket</p>
-                <div>$10.00</div>
-                <button class="buy-1">Buy Now</button>
-            </div>
-        </div>
-        <div class="pp">
-            Pending Products
-        </div>
-        <div class="container">
-            <div class="card">
-                <img src="assets/images/Jacket.jpg">
-                <p>Aphelion Jacket</p>
-                <div>$10.00</div>
-                <button class="buy-1">Buy Now</button>
-            </div>
-            <div class="card">
-                <img src="assets/images/Jacket.jpg">
-                <p>Ispark Jacket</p>
-                <div>$10.00</div>
-                <button class="buy-1">Buy Now</button>
-            </div>
-            <div class="card">
-                <img src="assets/images/Jacket.jpg">
-                <p>Ortus Jacket</p>
-                <div>$10.00</div>
-                <button class="buy-1">Buy Now</button>
-            </div>
-            <div class="card">
-                <img src="assets/images/Jacket.jpg">
-                <p>ProED Jacket</p>
-                <div>$10.00</div>
-                <button class="buy-1">Buy Now</button>
-            </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openDrop(event, 'orders')">My Orders</button>
+                <button class="tablinks" onclick="openDrop(event, 'info')">My Information</button>
+              </div>
+              
+              <div id="orders" class="tabcontent">
+                <h3>My Orders</h3>
+                
+              </div>
+              
+              <div id="info" class="tabcontent">
+                <h3>My Info</h3>
+                
+              </div>
         </div>
     </body>
 </html>
