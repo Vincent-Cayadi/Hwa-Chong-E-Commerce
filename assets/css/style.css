@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -30,65 +28,32 @@ body{
     scrollbar-width: none;
 }
 
-.navbar{
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 20px;
+    background-color: #333;
 }
 
-.nav-bar{
-    float: right;
-    margin-bottom: 5px;
-    margin-right: 8px;
-    margin-top: 0px;
-}
-
-.logo{
+li {
     float: left;
-    margin: 20px;
 }
 
-.right-side{
-    margin: 0px 0px;
-}
-
-.right-side ul{
-    list-style: none; 
-    display: table;
-    width: 600px;
-}
-
-.right-side li{
-    display: table-cell; 
-    position: relative; 
-    padding: 15px 0;
-}
-
-.right-side a{
-    color: black;
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 20px;
-    position: relative;
-}
-
-.right-side a::after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
+li a {
     display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: red;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-.right-side a:hover::after { 
-    width: 100%; 
-    left: 0; 
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
 }
 
 input[type=text]{

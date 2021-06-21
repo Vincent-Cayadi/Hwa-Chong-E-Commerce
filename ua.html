@@ -11,6 +11,12 @@
         <script type="text/javascript" src="assets/js/ua.js"></script>
     </head>
     <body>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li style="float:right"><a class="active" href="#about">About</a></li>
+      </ul>
         <div class="container">
             <div class="background-info">
                 <div class="pfp">
@@ -21,19 +27,29 @@
                 </div>
             </div>
             <div class="tab">
-                <button class="tablinks" onclick="openDrop(event, 'orders')">My Orders</button>
+                <button class="tablinks" onclick="openDrop(event, 'orders')" id="defaultOpen">My Orders</button>
                 <button class="tablinks" onclick="openDrop(event, 'info')">My Information</button>
               </div>
-              
               <div id="orders" class="tabcontent">
-                <h3>My Orders</h3>
-                
+                <p>
+                  Your pending orders
+                </p>
+                <p>
+                  Your previous orders
+                </p>
               </div>
               
               <div id="info" class="tabcontent">
-                <h3>My Info</h3>
-                
+                <p>
+                  Your name
+                </p>
+                <p>
+                  Your email
+                </p>
               </div>
         </div>
     </body>
+    <script>
+      document.getElementById("defaultOpen").click();
+    </script>
 </html>
