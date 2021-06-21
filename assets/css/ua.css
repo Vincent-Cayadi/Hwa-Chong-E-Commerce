@@ -35,8 +35,8 @@ li a:hover:not(.active) {
 }
 
 .container{
-  border-style: solid;
-  width: 60%;
+  border-style: none;
+  width: 70%;
   margin: 24px auto auto auto;
   border-width: 1px;
 }
@@ -86,9 +86,38 @@ li a:hover:not(.active) {
 .tabcontent {
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
-  
+
+.fuckme{
+  margin: 20px 5px;
+  font-size: 24px;
+}
+
+.fuckyou{
+  margin: 20px 5px;
+}
+
+.fuckeveryone{
+  margin: 120px auto;
+  text-align: center;
+}
+
   /* Go from zero to full opacity */
 @keyframes fadeEffect {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+.pesto{
+  margin: 5px;
+}
+
+input{
+  width: 50%;
+  padding: 3px;
+}
+
+.fuck{
+  margin: 2px;
+  padding: 3px;
+  float: right;
 }
