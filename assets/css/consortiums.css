@@ -87,9 +87,9 @@ li a:hover:not(.active) {
     text-decoration: none;
 }
 .aphelion{
-    background: url("assets\\images\\aphelion.png") no-repeat top center fixed;
-    background-size: cover;
-    height: 200px;
+    background: url("https://lh3.googleusercontent.com/GhQ_gXqKhtSYOn0C1PcT7clgFAFzpEqURRficTt0vhNIYO52JH4bSrodkubgAFZ8hYGLkdgf9xOSCH1uXUXDcKmtGDHSBjsGYo5O85uorIrwlkK2=w1280") no-repeat top center fixed;
+    background-size: 300px 100px cover;
+    height: 300px;
     width: 100%;
     margin: 0;
     padding: 0;
