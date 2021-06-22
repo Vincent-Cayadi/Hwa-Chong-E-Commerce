@@ -315,18 +315,6 @@ li a:hover:not(.active) {
     color: rgb(101, 99, 102);
 }
 
-button{
-    border-color: red;
-    width:100%;
-    height: 30px;
-    background-color: rgb(172, 191, 246);
-    font-size: 20px;
-}
-
-button:hover{
-    background-color: white;
-
-}
 
 /* media queries for responsive view */
 @media only screen and (min-width : 800px){

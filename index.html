@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<link rel="shortcut icon" href="assets/images/cropped-hwa-chong-favicon.png" type="image/x-icon">
-	<meta charset="UTF-8">
-	<title>ProjMerk</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.css">
-    <script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
-    <script type="text/javascript" src="assets/js/carousel.js"></script>
-</head>
+	<head>
+		<link rel="shortcut icon" href="assets/images/cropped-hwa-chong-favicon.png" type="image/x-icon">
+		<meta charset="UTF-8">
+		<title>ProjMerk</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>
+		<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.css">
+		<script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>
+		<script type="text/javascript" src="plugins/slick/slick.min.js"></script>
+		<script type="text/javascript" src="assets/js/carousel.js"></script>
+	</head>
 <body>
 	<ul>
         <li><a href="index.html">Home</a></li>
@@ -181,6 +181,21 @@
 			</div>
 		</div>
 	</body>
+	<script>
+		$(document).ready(function(){
+			$('.carousel').slick({
+				dots: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1000,
+				variableWidth: true,
+				adaptiveHeight: false,
+				accessibility: false,
+				arrows: false,
+			});
+		});        
+	</script>
 </html>
 <script type="text/javascript" src="assets/js/main.js"></script>
 
