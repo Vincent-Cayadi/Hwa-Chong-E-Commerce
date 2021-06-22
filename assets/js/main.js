@@ -168,21 +168,25 @@ function displayCart(){
 var totalAmount;
 var totalItems;
 var totalSaving;
+var input; 
+var quantityinput;
+
 
 //add item to the cart
 function addItem(){
     totalAmount=0;
     totalItems = 0;
-    totalSaving=0
+    totalSaving=0;
+    quantityinput=1
     var clrNode=document.getElementById('item-body');
         clrNode.innerHTML= '';
         console.log(clrNode.childNodes)
         cartList.map((cart)=>
         {
             var cartCont = document.getElementById('item-body');
-            totalAmount = totalAmount + cart.price;
+            totalAmount = totalAmount + cart.price*quantityinput;
             totalSaving = totalSaving + cart.save;
-            totalItems = totalItems + 1;
+            totalItems = totalItems + quantityinput;
 
             var tempCart = document.createElement('div')
             tempCart.setAttribute('class','cart-list');
@@ -203,9 +207,10 @@ function addItem(){
             listPay.innerHTML = cart.price;
             tempCart.appendChild(listPay);
 
-            var listQuantity = document.createElement('h3');
+            var listQuantity = document.createElement('input');
             listQuantity.setAttribute('class','quantity');
-            listQuantity.innerHTML = '1';
+            listQuantity.setAttribute('type','number');
+            listQuantity.setAttribute('value','1');
             tempCart.appendChild(listQuantity);
 
             var listTrash = document.createElement('i');
@@ -213,8 +218,7 @@ function addItem(){
             listTrash.setAttribute('id','remove');
             tempCart.appendChild(listTrash);
 
-            cartCont.appendChild(tempCart)
-            
+            cartCont.appendChild(tempCart) 
         })
         document.getElementById('total-amount').innerHTML = 'Total Amount : $ ' + totalAmount;
         document.getElementById('total-items').innerHTML = 'Total Items : ' + totalItems;
