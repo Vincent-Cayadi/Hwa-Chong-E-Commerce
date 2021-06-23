@@ -6,32 +6,15 @@
     box-sizing: border-box;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+header{
+    position: relative;
+}
+
+.navbar{
     background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: #04AA6D;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .dropdown {
@@ -50,7 +33,7 @@ li a:hover:not(.active) {
     margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.dropdown:hover {
     background-color: red;
 }
 
@@ -61,6 +44,8 @@ li a:hover:not(.active) {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    top: 100%;
+    right: 220px;
 }
 
 .dropdown-content a {
@@ -79,13 +64,37 @@ li a:hover:not(.active) {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.right-side, .left-side, .ua{
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.ua{
+    background-color: #04AA6D;
+    float: right;
+}
+
 .right-side{
     float: right;
 }
+
+.left-side{
+    float: left;
+}
+
+.right-side:hover, .left-side:hover{
+    background: red;
+}
+
 .special{
     color: white;
     text-decoration: none;
 }
+
 .aphelion{
     background: url("aphelion.png") no-repeat top center fixed;
     background-size: 300px 100px cover;
@@ -140,4 +149,10 @@ li a:hover:not(.active) {
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+.content p{
+    font-size: 32px;
+    margin: 8px 24px;
+    text-decoration: underline;
 }
