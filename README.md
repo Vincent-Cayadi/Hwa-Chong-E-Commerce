@@ -19,3 +19,16 @@ July-August: Confirm the payment and delivery method
 	<li>Slick Carousel</li>
 	<li>Icons from Font Awesome</li>
 </ul>
+<h1 align="center">Website Progression</h1>
+:heavy_exclamation_mark: Fix the navbar<br>
+<hr>
+:heavy_check_mark: Website Layout<br>
+:heavy_check_mark: Accessibility - Navbar partially done<br>
+:heavy_check_mark: User Account Page<br>
+<hr>
+:x: Payment<br>
+:x: Redesigning the card item <br>
+:x: Add to cart page <br>
+:x: Add to cart feature - usage of cookies <br>
+:x: Server/Backend stuff <br>
+:x: Code refactor <br>
