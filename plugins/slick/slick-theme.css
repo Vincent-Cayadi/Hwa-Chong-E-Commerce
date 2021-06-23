@@ -36,26 +36,26 @@
 
     cursor: pointer;
 
-    color: transparent;
-    border: none;
-    outline: none;
-    background: transparent;
+    color: black;
+    border: black;
+    outline: black;
+    background:white;
+    
 }
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
-    outline: none;
-    background: transparent;
+    color: black;
+    outline: black;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
 .slick-next:hover:before,
 .slick-next:focus:before
 {
-    opacity: 1;
+    opacity: .25;
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
@@ -71,7 +71,7 @@
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

@@ -107,3 +107,11 @@ li a:hover:not(.active) {
     font-size: 24px;
     text-decoration: underline;
 }
+
+.item img{
+    width:60%;
+    height:30%;
+    
+}
+
+
