@@ -43,6 +43,20 @@ h1{
     font-size: 18px;
     color: #fff;
 }
+
+.newBG{
+    background-color:red;
+}
+
+button{
+    margin:1px;
+    width: 49%;
+    padding: 10px;
+    border: black 1px solid;
+    border-radius: 15px;
+    font-size: 18px;
+    background-color:white;
+}
 @media screen and (max-width: 600px){
     body{
         padding: 20px;
@@ -59,3 +73,4 @@ h1{
         box-sizing: border-box;
     }
 }
+

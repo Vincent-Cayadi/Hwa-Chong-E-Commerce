@@ -6,17 +6,52 @@
     <link rel="stylesheet" href="assets/css/payment.css">
     <title>Payment-page</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
 </head>
+<style>
+    .active {
+    color: #fff;
+    background-color:red;
+}
+</style>
 <body>
-    <form action="action">
+    <div>
         <h1>Payment</h1>
         <label for="name">Payer Name</label><br>
-        <input class="box" type="text" name="Pname" id="Pname" placeholder="Enter Name"><br>
+        <input class="box" type="text" placeholder="Enter Name"><br>
         <label for="pemail">Enter Email</label><br>
-        <input class="box" type="text" name="Pemail" id="Pemail" placeholder="Enter Email"><br>
-        <button class="box">DBS Paylah!</button><button class="box">other</button>
-        <button class="btn" type="button">Pay now</button>
-        <button class="btn" type="button">close</button>
-    </form>
+        <input class="box" type="text" placeholder="Enter Email"><br>
+        <div class="content-itinerary__buttons-wrapper">
+            <button id="paylah" class="content-itinerary__buttons description-text ">Paylah</button>
+            <button id="other" class="content-itinerary__buttons description-text">Other</button>
+          </div>
+        <button class="btn" type="button" onclick="Pay()">Pay now</button>
+        <button class="btn" type="button" onclick="location.href='index.html'">close</button>
+    </div>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+    let myBtns=document.querySelectorAll('.content-itinerary__buttons');
+    myBtns.forEach(function(btn) {
+
+        btn.addEventListener('click', () => {
+            myBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        });
+    });
+});
+
+function Pay(){
+    var paylahbtn = document.getElementById('paylah')
+    var otherbtn = document.getElementById('other')
+    if(paylahbtn.classList=='active'){
+        location.add("http://127.0.0.1:5500/QRCode.html")
+    }
+    else if(otherbtn.classList=='active'){
+        alert("Other button currently unavailable sorry")
+    }
+}
+
+</script>
 </html>
