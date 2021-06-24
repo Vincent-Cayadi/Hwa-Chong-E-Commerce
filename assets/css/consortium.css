@@ -95,7 +95,9 @@ header{
 
 .container{
     width: 85%;
-    margin: 32px auto;
+    margin: 50px auto;
+    position: relative;
+    z-index: -1;
 }
 
 .container a{
