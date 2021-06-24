@@ -26,9 +26,14 @@ July-August: Confirm the payment and delivery method
 :heavy_check_mark: Accessibility - Navbar partially done<br>
 :heavy_check_mark: User Account Page<br>
 <hr>
-:x: Payment<br>
+:x: :heavy_exclamation_mark: Payment<br>
+:x: :heavy_exclamation_mark: Add to cart feature - usage of cookies <br>
+:x: :heavy_exclamation_mark:Server/Backend stuff <br>
+:x: :heavy_exclamation_mark:Code refactor <br>
 :x: Redesigning the card item <br>
 :x: Add to cart page <br>
-:x: Add to cart feature - usage of cookies <br>
-:x: Server/Backend stuff <br>
-:x: Code refactor <br>
+
+:heavy_check_mark: : Completed
+:x: : Not complete
+:x: :heavy_exclamation_mark: : Not complete and higher priority
+:heavy_exclamation_mark: : High priority / Working on rn
