@@ -1,4 +1,4 @@
-const data= [
+data= [
     {
         id : 0,
         img : '/Website-Backup/assets/images/Jacket.jpg',
@@ -74,7 +74,14 @@ const data= [
     
 ];
 
-let cartList=[]; //array to store cart lists
+// let cartList=[]; 
+
+cartObj = getCookie("cart");
+if(cartObj != "") {
+    console.log("Load cart.");
+    data = JSON.parse(cartObj);
+}
+
 
 var i;
 var detail =document.getElementsByClassName('card-item');
@@ -123,19 +130,39 @@ function handleDetail(e){
     detailPrice.innerHTML= 'Price : $ ' +data[getId].price;
 }
 
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+
+// update cookie using all data.
+function updateCookie() {
+    document.cookie = "cart=" + JSON.stringify(data);
+}
+
 // add item to the cart
 function addToCart(id) {
     if(!data[id].itemInCart){
-        cartList= [...cartList,data[id]];
-        addItem()
-        
+        // cartList= [...cartList,data[id]];
         alert('Item Added to Your Cart')
-
     }
     else{
         alert('Your Item is Already There')
     }
     data[id].itemInCart= true
+    updateCartPage()
+    updateCookie()
 }
 
 //back to main page
@@ -154,15 +181,6 @@ function displayCart(){
     document.getElementById('main').style.display= "none";
     document.getElementById('details-page').style.display= "none";
     document.getElementById('cart-container').style.display= "block";
-    if(cartList.length==0){
-        document.getElementById('cart-with-items').style.display= "none";
-        document.getElementById('empty-cart').style.display= "block";
-    }
-    else{
-        document.getElementById('empty-cart').style.display= "none";
-        document.getElementById('cart-with-items').style.display= "block";
-        
-    }
 }
 
 var totalAmount;
@@ -172,8 +190,23 @@ var input;
 var quantityinput;
 
 
-//add item to the cart
-function addItem(){
+// Update cartList and corresponding elements.
+function updateCartPage(){
+    let cartList = data.filter( 
+        function(e) {
+          return e.itemInCart;
+        }
+    );
+    if(cartList.length==0){
+        document.getElementById('cart-with-items').style.display= "none";
+        document.getElementById('empty-cart').style.display= "block";
+    }
+    else{
+        document.getElementById('empty-cart').style.display= "none";
+        document.getElementById('cart-with-items').style.display= "block";
+        
+    }
+
     totalAmount=0;
     totalItems = 0;
     totalSaving=0;
@@ -197,11 +230,6 @@ function addItem(){
             listImg.src = cart.img
             tempCart.appendChild(listImg)
 
-            var listName = document.createElement('h3');
-            listName.setAttribute('class','list-name');
-            listName.innerHTML = cart.name;
-            tempCart.appendChild(listName)
-
             var listPay = document.createElement('h3');
             listPay.setAttribute('class','pay');
             listPay.innerHTML = cart.price;
@@ -212,6 +240,16 @@ function addItem(){
             listQuantity.setAttribute('type','number');
             listQuantity.setAttribute('value','1');
             tempCart.appendChild(listQuantity);
+
+            var totalPrice = document.createElement('h3');
+            totalPrice.setAttribute('class','totalPrice');
+            totalPrice.innerHTML = cart.price * quantityinput;
+            tempCart.appendChild(totalPrice)
+
+            var listName = document.createElement('h3');
+            listName.setAttribute('class','list-name');
+            listName.innerHTML = cart.name;
+            tempCart.appendChild(listName)
 
             var listTrash = document.createElement('i');
             listTrash.setAttribute('class','fa fa-trash ');
@@ -226,14 +264,12 @@ function addItem(){
         document.getElementById('total').style.display= "block";
 }
 
-//remove item from the cart
+//remove item from the cart, and then update cart page and cookie.
 function removeFromCart(itemId){
-    data[itemId].itemInCart = false
-    cartList = cartList.filter((list)=>list.id!=itemId);
-    addItem()
-    if(cartList.length==0){
-        document.getElementById('cart-with-items').style.display= "none";
-        document.getElementById('empty-cart').style.display= "block";
-    }
+    data[itemId].itemInCart = false;
+    // cartList = cartList.filter((list)=>list.id!=itemId);
+    updateCartPage();
+    updateCookie();
 }
 
+updateCartPage();
