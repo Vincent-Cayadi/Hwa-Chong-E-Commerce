@@ -266,7 +266,10 @@ header{
 /* cart list section*/
 #cart-container{
     display: none;
-    margin-top: 5rem;
+    margin: 5rem 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    min-height:300px;
 }
 #cart-title{
     font-size: 3.5rem;
@@ -282,7 +285,6 @@ header{
 }
 
 #cart-with-items{
-    display: none;
     margin-top: 1rem;
 }
 
@@ -303,7 +305,7 @@ header{
     background: white;
     width:1234px;
 }
-.list-name,.pay,.quantity,#remove{
+.list-name,.quantity,#remove{
     padding: 1.2rem 0.2rem;
 }
 
@@ -317,20 +319,26 @@ header{
 }
 #total{
     display: none;
-    margin-top: 3rem;
     background: rgb(172, 191, 246);
     font-family: monospace;
     font-size: larger;
     padding: 1rem;
+    padding-top: 6rem;
     color: rgb(149, 51, 34);
     letter-spacing: 0.1rem;
     margin-bottom: 1.5rem;
-    width: 30%;
-    height:100%;
     text-align: center;
-    position:absolute;
-    right:0px;
-    top:355px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 25%;   
+    height: 100%;
+}
+
+hr{
+    border: 2px solid black;
+    background-color: black;
+    margin-bottom: 3rem;
 }
 #you-saved{
     color: rgb(101, 99, 102);

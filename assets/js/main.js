@@ -203,7 +203,7 @@ function updateCartPage(){
     }
     else{
         document.getElementById('empty-cart').style.display= "none";
-        document.getElementById('cart-with-items').style.display= "block";
+        document.getElementById('cart-with-items').style.display= "grid";
         
     }
 
@@ -232,7 +232,7 @@ function updateCartPage(){
 
             var listPay = document.createElement('h3');
             listPay.setAttribute('class','pay');
-            listPay.innerHTML = cart.price;
+            listPay.innerHTML ='$'+ cart.price;
             tempCart.appendChild(listPay);
 
             var listQuantity = document.createElement('input');
@@ -243,7 +243,7 @@ function updateCartPage(){
 
             var totalPrice = document.createElement('h3');
             totalPrice.setAttribute('class','totalPrice');
-            totalPrice.innerHTML = cart.price * quantityinput;
+            totalPrice.innerHTML = '$' + cart.price * quantityinput;
             tempCart.appendChild(totalPrice)
 
             var listName = document.createElement('h3');
