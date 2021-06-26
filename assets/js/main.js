@@ -35,6 +35,87 @@ data= [
         delievery : 'In 3 - 4 days',
         itemInCart: false
     },
+    {
+        id : 4,
+        img : '/Website-Backup/assets/images/Jacket.jpg',
+        name : 'Aphelion Jacket',
+        price : 10,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false
+    },
+    {
+        id : 5,
+        img : '/Website-Backup/assets/images/Jacket.jpg',
+        name : 'Ispark Jacket',
+        price : 10,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false
+    },
+    {
+        id : 6,
+        img : '/Website-Backup/assets/images/Jacket.jpg',
+        name : 'Ortus Jacket',
+        price : 10,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false
+    },
+    {
+        id : 7,
+        img : '/Website-Backup/assets/images/Jacket.jpg',
+        name : 'ProEd Jacket',
+        price : 10,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false
+    },
+    {
+        id : 8,
+        img : '/Website-Backup/assets/images/Jacket.jpg',
+        name : 'Aphelion Jacket',
+        price : 10,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false
+    },
+    {
+        id : 9,
+        img : '/Website-Backup/assets/images/Jacket.jpg',
+        name : 'Ispark Jacket',
+        price : 10,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false
+    },
+    {
+        id : 10,
+        img : '/Website-Backup/assets/images/Jacket.jpg',
+        name : 'Ortus Jacket',
+        price : 10,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false
+    },
+    {
+        id : 11,
+        img : '/Website-Backup/assets/images/Jacket.jpg',
+        name : 'ProEd Jacket',
+        price : 10,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false
+    },
+    {
+        id : 12,
+        img : '/Website-Backup/assets/images/Jacket.jpg',
+        name : 'Aphelion Jacket',
+        price : 10,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false
+    },
     
 ];
 

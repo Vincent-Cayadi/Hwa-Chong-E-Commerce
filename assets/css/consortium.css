@@ -9,6 +9,11 @@
 #main{
     margin: 5%;
 }
+.consortium a{
+    font-size: 24px;
+    color: black;
+    text-decoration: underline;
+}
 .item{
     display: flex;
 }
