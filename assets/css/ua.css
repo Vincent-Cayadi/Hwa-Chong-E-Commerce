@@ -92,3 +92,7 @@ input{
   padding: 3px;
   float: right;
 }
+
+.fuck:hover {
+  cursor:not-allowed
+}
