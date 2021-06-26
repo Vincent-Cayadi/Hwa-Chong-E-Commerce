@@ -26,11 +26,12 @@ July-August: Confirm the payment and delivery method
 :heavy_check_mark: Accessibility - Navbar partially done<br>
 :heavy_check_mark: User Account Page<br>
 :heavy_check_mark: Add to cart feature - usage of cookies <br>
+:heavy_check_mark: Redesigning the card item <br>
 <hr>
 :x: :heavy_exclamation_mark: Payment<br>
 :x: :heavy_exclamation_mark:Server/Backend stuff <br>
 :x: :heavy_exclamation_mark:Code refactor <br>
-:x: Redesigning the card item <br>
+
 :x: Add to cart page <br>
 <h1 align="center">Bugs to fix</h1>
 <img src="bugsImages/Untitled.png">
