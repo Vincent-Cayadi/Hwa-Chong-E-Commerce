@@ -6,9 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cotton Road</title>
         <link rel="stylesheet" type="text/css" href="assets/css/ua.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet"> 
-        <script type="text/javascript" src="assets/js/ua.js"></script>
     </head>
     <header>
       <div class="navbar">
@@ -101,6 +98,19 @@
         </div>
     </body>
     <script>
+      function openDrop(evt, catName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(catName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
       document.getElementById("defaultOpen").click();
     </script>
 </html>

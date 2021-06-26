@@ -11,10 +11,10 @@ header{
 }
 
 .navbar{
-background-color: #333;
-position: fixed;
-top: 0;
-width: 100%;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .dropdown {
@@ -23,7 +23,6 @@ width: 100%;
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
   border: none;
   outline: none;
   color: white;
@@ -68,7 +67,6 @@ width: 100%;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
 }
 
 .ua{
@@ -96,8 +94,7 @@ width: 100%;
 .container{
   border-style: none;
   width: 70%;
-  margin: 24px auto auto auto;
-  border-width: 1px;
+  margin: 24px auto;
 }
 
 .background-info{
