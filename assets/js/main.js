@@ -35,42 +35,6 @@ data= [
         delievery : 'In 3 - 4 days',
         itemInCart: false
     },
-    {
-        id : 4,
-        img : '/Website-Backup/assets/images/Jacket.jpg',
-        name : 'Aphelion Jacket',
-        price : 10,
-        save : 0,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 5,
-        img : '/Website-Backupv/assets/images/Jacket.jpg',
-        name : 'Ispark Jacket',
-        price : 10,
-        save : 0,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 6,
-        img : '/Website-Backup/assets/images/Jacket.jpg',
-        name : 'Ortus Jacket',
-        price : 10,
-        save : 0,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 7,
-        img : '/Website-Backup/assets/images/Jacket.jpg',
-        name : 'ProEd Jacket',
-        price : 10,
-        save : 0,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
     
 ];
 
