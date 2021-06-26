@@ -32,7 +32,13 @@ July-August: Confirm the payment and delivery method
 :x: :heavy_exclamation_mark:Code refactor <br>
 :x: Redesigning the card item <br>
 :x: Add to cart page <br>
-
+<h1 align="center">Bugs to fix</h1>
+<img src="bugsImages/Untitled.png">
+Product card on hover covers Navbar
+<br>
+<img src="bugsImages/1Untitled.png">
+Dropdown menu gets covered by Cart page
+<br>
 :heavy_check_mark: : Completed
 :x: : Not complete
 :x: :heavy_exclamation_mark: : Not complete and higher priority
