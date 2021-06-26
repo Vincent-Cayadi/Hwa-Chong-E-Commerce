@@ -93,29 +93,11 @@ header{
     color: white;
     text-decoration: none;
 }
-
 #main{
     margin: 5%;
 }
-
-.head{
-    font-size: 24px;
-    text-decoration: underline;
-    text-decoration-color: black;
-    margin-bottom: 25px;
-    margin-top: 40px;
-}
-
-.head a{
-    font-size: 24px;
-    text-decoration: underline;
-    color:black;
-}
-
-.card{
+.item{
     display: flex;
-    text-align: center;
-    margin: 20px 100px;
 }
 
 .item-container{
