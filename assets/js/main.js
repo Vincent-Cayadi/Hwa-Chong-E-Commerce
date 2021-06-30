@@ -226,6 +226,7 @@ function displayCart(){
     document.getElementById('main').style.display= "none";
     document.getElementById('details-page').style.display= "none";
     document.getElementById('cart-container').style.display= "block";
+    updateCartPage()
 }
 
 var totalAmount;
@@ -237,6 +238,7 @@ var quantityinput;
 
 // Update cartList and corresponding elements.
 function updateCartPage(){
+
     let cartList = data.filter( 
         function(e) {
           return e.itemInCart;
@@ -255,16 +257,12 @@ function updateCartPage(){
     totalAmount=0;
     totalItems = 0;
     totalSaving=0;
-    quantityinput=1
     var clrNode=document.getElementById('item-body');
         clrNode.innerHTML= '';
         console.log(clrNode.childNodes)
         cartList.map((cart)=>
         {
             var cartCont = document.getElementById('item-body');
-            totalAmount = totalAmount + cart.price*quantityinput;
-            totalSaving = totalSaving + cart.save;
-            totalItems = totalItems + quantityinput;
 
             var tempCart = document.createElement('div')
             tempCart.setAttribute('class','cart-list');
@@ -285,6 +283,7 @@ function updateCartPage(){
             listQuantity.setAttribute('type','number');
             listQuantity.setAttribute('value','1');
             tempCart.appendChild(listQuantity);
+            quantityinput = document.getElementsByClassName('quantity').value
 
             var totalPrice = document.createElement('h3');
             totalPrice.setAttribute('class','totalPrice');
@@ -301,12 +300,25 @@ function updateCartPage(){
             listTrash.setAttribute('id','remove');
             tempCart.appendChild(listTrash);
 
+            totalAmount = totalAmount + cart.price*quantityinput;
+            totalSaving = totalSaving + cart.save;
+            totalItems = totalItems + quantityinput;
             cartCont.appendChild(tempCart) 
         })
         document.getElementById('total-amount').innerHTML = 'Total Amount : $ ' + totalAmount;
         document.getElementById('total-items').innerHTML = 'Total Items : ' + totalItems;
         document.getElementById('you-saved').innerHTML = 'You Saved : $ ' + totalSaving;
         document.getElementById('total').style.display= "block";
+}
+    updateCartPage()
+quantityinput.onchange = function(){
+    if(quantityinput>0){
+    updateCartPage()
+    }
+    else{
+        quantityinput=1
+        console.log("changed")
+    }
 }
 
 //remove item from the cart, and then update cart page and cookie.
@@ -317,4 +329,4 @@ function removeFromCart(itemId){
     updateCookie();
 }
 
-updateCartPage();
+document.onload(updateCartPage())

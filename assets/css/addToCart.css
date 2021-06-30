@@ -133,6 +133,12 @@
     margin-top: 1rem;
 }
 
+#item-body{
+    height: 350px;
+    overflow:hidden;
+    overflow-y:auto ;
+}
+
 .cart-column{
     display: grid;
     padding: 1rem;
