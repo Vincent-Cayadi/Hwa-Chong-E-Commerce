@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
-app.use(bodyParsnioder.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/",function(req,res){
     res.send("express is working")
