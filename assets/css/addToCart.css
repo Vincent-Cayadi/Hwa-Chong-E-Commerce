@@ -156,7 +156,7 @@
     background: white;
     width:1234px;
 }
-.list-name,.quantity,#remove{
+.list-name,#quantity,#remove{
     padding: 1.2rem 0.2rem;
 }
 

@@ -215,12 +215,6 @@ function refreshPage(){
     detailsPage.style.display = 'none'
 }
 
-// hide your cart page
-function hideCart(){
-    document.getElementById('main').style.display= "block";
-    document.getElementById('cart-container').style.display= "none";
-}
-
 //display your cart page
 function displayCart(){
     document.getElementById('main').style.display= "none";
@@ -229,11 +223,18 @@ function displayCart(){
     updateCartPage()
 }
 
+// hide your cart page
+function hideCart(){
+    document.getElementById('main').style.display= "block";
+    document.getElementById('cart-container').style.display= "none";
+}
+
 var totalAmount;
 var totalItems;
 var totalSaving;
 var input; 
 var quantityinput;
+var temp_quantity
 
 
 // Update cartList and corresponding elements.
@@ -257,6 +258,7 @@ function updateCartPage(){
     totalAmount=0;
     totalItems = 0;
     totalSaving=0;
+    temp_quantity=1;
     var clrNode=document.getElementById('item-body');
         clrNode.innerHTML= '';
         console.log(clrNode.childNodes)
@@ -279,15 +281,14 @@ function updateCartPage(){
             tempCart.appendChild(listPay);
 
             var listQuantity = document.createElement('input');
-            listQuantity.setAttribute('class','quantity');
+            listQuantity.setAttribute('id','quantity');
             listQuantity.setAttribute('type','number');
-            listQuantity.setAttribute('value','1');
+            listQuantity.setAttribute('value',1);
             tempCart.appendChild(listQuantity);
-            quantityinput = document.getElementsByClassName('quantity').value
 
             var totalPrice = document.createElement('h3');
             totalPrice.setAttribute('class','totalPrice');
-            totalPrice.innerHTML = '$' + cart.price * quantityinput;
+            totalPrice.innerHTML = '$' + cart.price * temp_quantity;
             tempCart.appendChild(totalPrice)
 
             var listName = document.createElement('h3');
@@ -300,26 +301,25 @@ function updateCartPage(){
             listTrash.setAttribute('id','remove');
             tempCart.appendChild(listTrash);
 
-            totalAmount = totalAmount + cart.price*quantityinput;
+            totalAmount = totalAmount + cart.price*temp_quantity;
             totalSaving = totalSaving + cart.save;
-            totalItems = totalItems + quantityinput;
+            totalItems = totalItems + temp_quantity;
             cartCont.appendChild(tempCart) 
         })
         document.getElementById('total-amount').innerHTML = 'Total Amount : $ ' + totalAmount;
         document.getElementById('total-items').innerHTML = 'Total Items : ' + totalItems;
         document.getElementById('you-saved').innerHTML = 'You Saved : $ ' + totalSaving;
         document.getElementById('total').style.display= "block";
+        var quantityinput = document.getElementById('quantity');
+        var quantityinput = quantityinput.getAttribute('value');
+        if(quantityinput>1){
+            updateQuantity()
+        }
+        else if (quantityinput<1){
+            quantityinput=1;
+        }
 }
-    updateCartPage()
-quantityinput.onchange = function(){
-    if(quantityinput>0){
-    updateCartPage()
-    }
-    else{
-        quantityinput=1
-        console.log("changed")
-    }
-}
+
 
 //remove item from the cart, and then update cart page and cookie.
 function removeFromCart(itemId){
@@ -329,4 +329,10 @@ function removeFromCart(itemId){
     updateCookie();
 }
 
-document.onload(updateCartPage())
+function updateQuantity(){
+    var quantityinput = document.getElementById('quantity');
+    var quantityinput = quantityinput.getAttribute('value');
+    alert(quantityinput)
+    
+}
+
