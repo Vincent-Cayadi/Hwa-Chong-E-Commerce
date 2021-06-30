@@ -126,6 +126,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
     min-height:300px;
+    border-radius: 3px;
 }
 #cart-title{
     font-size: 3.5rem;
@@ -255,4 +256,9 @@ hr{
     text-align: center;
     font-size: 1.2em;
     margin-right: 25px;
+}
+
+.payment{
+    padding: 2px 10px;
+    font-size: 18px;
 }
