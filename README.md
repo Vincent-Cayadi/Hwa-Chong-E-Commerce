@@ -28,8 +28,8 @@ July-August: Confirm the payment and delivery method
 :heavy_check_mark: Add to cart feature - usage of cookies <br>
 :heavy_check_mark: Redesigning the card item <br>
 <hr>
-:x: :heavy_exclamation_mark: Payment<br>
-:x: :heavy_exclamation_mark:Server/Backend stuff <br>
+
+:heavy_exclamation_mark:Server/Backend stuff <br>
 :x: :heavy_exclamation_mark:Code refactor <br>
 
 :x: Add to cart page <br>
@@ -43,4 +43,4 @@ Dropdown menu gets covered by Cart page
 :heavy_check_mark: : Completed
 :x: : Not complete
 :x: :heavy_exclamation_mark: : Not complete and higher priority
-:heavy_exclamation_mark: : High priority / Working on rn
+
