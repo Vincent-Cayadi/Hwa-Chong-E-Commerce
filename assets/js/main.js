@@ -119,13 +119,40 @@ data= [
     
 ];
 
-// let cartList=[]; 
-
 cartObj = getCookie("cart");
 if(cartObj != "") {
     console.log("Load cart.");
     data = JSON.parse(cartObj);
 }
+// let cartList=[]; 
+
+function ready() {
+    var quantityinput = document.getElementById('quantity');
+    console.log('hi i have come')
+    for (var i = 0; i <quantityinput.getAttribute('value'); i++) {
+        console.log('hi i have come')
+        quantityinput.addEventListener('change', quantityChanged)
+    }
+}
+
+function quantityChanged(event) {
+    var quantityinput = event.target
+    if (isNaN(quantityinput.value) || quantityinput.value <= 0) {
+        quantityinput.value = 1
+    }
+    updateQuantity()
+}
+
+function updateQuantity(){
+    var quantityinput = document.getElementById('quantity').value
+    var itemPrice = document.getElementById('pay').innerHTML;
+    var itemTotal = document.getElementById('totalPrice').innerHTML; 
+    document.getElementById('totalPrice').innerHTML = itemPrice * quantityinput;
+    document.getElementById('total-items').innerHTML = quantityinput;
+    document.getElementById('total-amount').innerHTML = itemTotal
+    
+}
+
 
 
 var i;
@@ -275,20 +302,30 @@ function updateCartPage(){
             listImg.src = cart.img
             tempCart.appendChild(listImg)
 
+            var listPayContainer = document.createElement('h3');
+            listPayContainer.setAttribute('class','payContainer');
+            listPayContainer.innerHTML ='$'
             var listPay = document.createElement('h3');
+            listPay.setAttribute('id','pay');
             listPay.setAttribute('class','pay');
-            listPay.innerHTML ='$'+ cart.price;
+            listPay.innerHTML = cart.price;
             tempCart.appendChild(listPay);
+            tempCart.appendChild(listPayContainer);
 
             var listQuantity = document.createElement('input');
             listQuantity.setAttribute('id','quantity');
+            listQuantity.setAttribute('class','quantity');
             listQuantity.setAttribute('type','number');
-            listQuantity.setAttribute('value',1);
+            listQuantity.setAttribute('value',"1");
             tempCart.appendChild(listQuantity);
 
+            var totalPriceContainer = document.createElement('h3');
+            totalPriceContainer.setAttribute('class','totalPriceContainer');
+            totalPriceContainer.innerHTML = '$';
             var totalPrice = document.createElement('h3');
-            totalPrice.setAttribute('class','totalPrice');
-            totalPrice.innerHTML = '$' + cart.price * temp_quantity;
+            totalPrice.setAttribute('id','totalPrice');
+            totalPrice.innerHTML = cart.price;
+            tempCart.appendChild(totalPriceContainer)
             tempCart.appendChild(totalPrice)
 
             var listName = document.createElement('h3');
@@ -306,18 +343,14 @@ function updateCartPage(){
             totalItems = totalItems + temp_quantity;
             cartCont.appendChild(tempCart) 
         })
-        document.getElementById('total-amount').innerHTML = 'Total Amount : $ ' + totalAmount;
-        document.getElementById('total-items').innerHTML = 'Total Items : ' + totalItems;
+        document.getElementById('total-amount-container').innerHTML = 'Total Amount : $ ' 
+        document.getElementById('total-amount').innerHTML = totalAmount;
+        document.getElementById('total-items-container').innerHTML = 'Total Items : '  
+        document.getElementById('total-items').innerHTML = totalItems;
         document.getElementById('you-saved').innerHTML = 'You Saved : $ ' + totalSaving;
         document.getElementById('total').style.display= "block";
-        var quantityinput = document.getElementById('quantity');
-        var quantityinput = quantityinput.getAttribute('value');
-        if(quantityinput>1){
-            updateQuantity()
-        }
-        else if (quantityinput<1){
-            quantityinput=1;
-        }
+        ready()
+        
 }
 
 
@@ -327,12 +360,5 @@ function removeFromCart(itemId){
     // cartList = cartList.filter((list)=>list.id!=itemId);
     updateCartPage();
     updateCookie();
-}
-
-function updateQuantity(){
-    var quantityinput = document.getElementById('quantity');
-    var quantityinput = quantityinput.getAttribute('value');
-    alert(quantityinput)
-    
 }
 
