@@ -235,6 +235,7 @@ function addToCart(id) {
     data[id].itemInCart= true
     updateCartPage()
     updateCookie()
+    detailsPage.style.display = 'none'
 }
 
 //back to main page
