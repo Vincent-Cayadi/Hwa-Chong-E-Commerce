@@ -127,30 +127,42 @@ if(cartObj != "") {
 // let cartList=[]; 
 
 function ready() {
-    var quantityinput = document.getElementById('quantity');
-    console.log('hi i have come')
-    for (var i = 0; i <quantityinput.getAttribute('value'); i++) {
-        console.log('hi i have come')
-        quantityinput.addEventListener('change', quantityChanged)
+    var quantityInputs = document.getElementsByClassName('quantity');
+
+    for (var i = 0; i < quantityInputs.length; ++i){
+        quantityInputs[i].addEventListener('change', quantityChanged)
     }
 }
 
 function quantityChanged(event) {
-    var quantityinput = event.target
-    if (isNaN(quantityinput.value) || quantityinput.value <= 0) {
-        quantityinput.value = 1
+    var quantityInput = event.target
+    if (isNaN(quantityInput.value) || quantityInput.value <= 0) {
+        quantityInput.value = 1
     }
-    updateQuantity()
+    var id = quantityInput.parentNode.id;
+    var price = document.getElementById('pay' + id).innerHTML;
+    document.getElementById('totalPrice' + id).innerHTML = price * quantityInput.value;
+
+    updateTotal()
 }
 
-function updateQuantity(){
-    var quantityinput = document.getElementById('quantity').value
-    var itemPrice = document.getElementById('pay').innerHTML;
-    var itemTotal = document.getElementById('totalPrice').innerHTML; 
-    document.getElementById('totalPrice').innerHTML = itemPrice * quantityinput;
-    document.getElementById('total-items').innerHTML = quantityinput;
-    document.getElementById('total-amount').innerHTML = itemTotal
-    
+// Updates total information in the bottom-left panel.
+function updateTotal(){
+    var quantityInputs = document.getElementsByClassName('quantity');
+    var prices = document.getElementsByClassName('totalPrice');
+
+    var totalCount = 0, totalPrice = 0;
+    for (var i = 0; i < quantityInputs.length; ++i) {
+        console.log(quantityInputs[i].value);
+        totalCount += parseInt(quantityInputs[i].value);
+    }
+    for (var i = 0; i < prices.length; ++i) {
+        console.log(prices[i].innerHTML);
+        totalPrice += parseFloat(prices[i].innerHTML);
+    }
+
+    document.getElementById('total-items').innerHTML = totalCount;
+    document.getElementById('total-amount').innerHTML = totalPrice;
 }
 
 
@@ -288,69 +300,72 @@ function updateCartPage(){
     totalSaving=0;
     temp_quantity=1;
     var clrNode=document.getElementById('item-body');
-        clrNode.innerHTML= '';
-        console.log(clrNode.childNodes)
-        cartList.map((cart)=>
-        {
-            var cartCont = document.getElementById('item-body');
+    clrNode.innerHTML= '';
+    console.log(clrNode.childNodes)
+    cartList.map((cart)=>
+    {
+        var cartCont = document.getElementById('item-body');
 
-            var tempCart = document.createElement('div')
-            tempCart.setAttribute('class','cart-list');
-            tempCart.setAttribute('id',cart.id);
+        var tempCart = document.createElement('div')
+        tempCart.setAttribute('id',cart.id);
+        tempCart.setAttribute('class','cart-list');
 
-            var listImg = document.createElement('img');
-            listImg.setAttribute('id','list-img');
-            listImg.src = cart.img
-            tempCart.appendChild(listImg)
+        var listImg = document.createElement('img');
+        listImg.setAttribute('id','list-img' + cart.id);
+        listImg.setAttribute('class','list-img');
+        listImg.src = cart.img
+        tempCart.appendChild(listImg)
 
-            var listPayContainer = document.createElement('h3');
-            listPayContainer.setAttribute('class','payContainer');
-            listPayContainer.innerHTML ='$'
-            var listPay = document.createElement('h3');
-            listPay.setAttribute('id','pay');
-            listPay.setAttribute('class','pay');
-            listPay.innerHTML = cart.price;
-            tempCart.appendChild(listPay);
-            tempCart.appendChild(listPayContainer);
+        var listPayContainer = document.createElement('h3');
+        listPayContainer.setAttribute('class','payContainer');
+        listPayContainer.innerHTML ='$'
+        var listPay = document.createElement('h3');
+        listPay.setAttribute('id','pay' + cart.id);
+        listPay.setAttribute('class','pay');
+        listPay.innerHTML = cart.price;
+        tempCart.appendChild(listPay);
+        tempCart.appendChild(listPayContainer);
 
-            var listQuantity = document.createElement('input');
-            listQuantity.setAttribute('id','quantity');
-            listQuantity.setAttribute('class','quantity');
-            listQuantity.setAttribute('type','number');
-            listQuantity.setAttribute('value',"1");
-            tempCart.appendChild(listQuantity);
+        var listQuantity = document.createElement('input');
+        listQuantity.setAttribute('id','quantity' + cart.id);
+        listQuantity.setAttribute('class','quantity');
+        listQuantity.setAttribute('type','number');
+        listQuantity.setAttribute('value',"1");
+        tempCart.appendChild(listQuantity);
 
-            var totalPriceContainer = document.createElement('h3');
-            totalPriceContainer.setAttribute('class','totalPriceContainer');
-            totalPriceContainer.innerHTML = '$';
-            var totalPrice = document.createElement('h3');
-            totalPrice.setAttribute('id','totalPrice');
-            totalPrice.innerHTML = cart.price;
-            tempCart.appendChild(totalPriceContainer)
-            tempCart.appendChild(totalPrice)
+        var totalPriceContainer = document.createElement('h3');
+        totalPriceContainer.setAttribute('class','totalPriceContainer');
+        totalPriceContainer.innerHTML = '$';
+        var totalPrice = document.createElement('h3');
+        totalPrice.setAttribute('id','totalPrice' + cart.id);
+        totalPrice.setAttribute('class','totalPrice');
+        totalPrice.innerHTML = cart.price;
+        tempCart.appendChild(totalPriceContainer)
+        tempCart.appendChild(totalPrice)
 
-            var listName = document.createElement('h3');
-            listName.setAttribute('class','list-name');
-            listName.innerHTML = cart.name;
-            tempCart.appendChild(listName)
+        var listName = document.createElement('h3');
+        listName.setAttribute('class','list-name');
+        listName.innerHTML = cart.name;
+        tempCart.appendChild(listName)
 
-            var listTrash = document.createElement('i');
-            listTrash.setAttribute('class','fa fa-trash ');
-            listTrash.setAttribute('id','remove');
-            tempCart.appendChild(listTrash);
+        var listTrash = document.createElement('i');
+        listTrash.setAttribute('class','fa fa-trash ');
+        listTrash.setAttribute('id','remove' + cart.id);
+        listTrash.setAttribute('class','remove');
+        tempCart.appendChild(listTrash);
 
-            totalAmount = totalAmount + cart.price*temp_quantity;
-            totalSaving = totalSaving + cart.save;
-            totalItems = totalItems + temp_quantity;
-            cartCont.appendChild(tempCart) 
-        })
-        document.getElementById('total-amount-container').innerHTML = 'Total Amount : $ ' 
-        document.getElementById('total-amount').innerHTML = totalAmount;
-        document.getElementById('total-items-container').innerHTML = 'Total Items : '  
-        document.getElementById('total-items').innerHTML = totalItems;
-        document.getElementById('you-saved').innerHTML = 'You Saved : $ ' + totalSaving;
-        document.getElementById('total').style.display= "block";
-        ready()
+        totalAmount = totalAmount + cart.price*temp_quantity;
+        totalSaving = totalSaving + cart.save;
+        totalItems = totalItems + temp_quantity;
+        cartCont.appendChild(tempCart) 
+    })
+    document.getElementById('total-amount-container').innerHTML = 'Total Amount : $ ' 
+    document.getElementById('total-amount').innerHTML = totalAmount;
+    document.getElementById('total-items-container').innerHTML = 'Total Items : '  
+    document.getElementById('total-items').innerHTML = totalItems;
+    document.getElementById('you-saved').innerHTML = 'You Saved : $ ' + totalSaving;
+    document.getElementById('total').style.display= "block";
+    ready()
         
 }
 

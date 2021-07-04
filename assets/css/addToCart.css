@@ -156,35 +156,35 @@
     background: white;
     width:1234px;
 }
-.list-name,#quantity,#remove{
+.list-name,.quantity,.remove{
     padding: 1.2rem 0.2rem;
 }
 
-#remove, #list-img{
+.remove, .list-img{
     grid-area: 1 / 1 / 2 / 2;
 }
 
-#totalPrice{
+.totalPrice{
     position: relative;
     left: 10px;
 }
 
-#totalPrice, .totalPriceContainer{
+.totalPrice, .totalPriceContainer{
     grid-column: 4;
     grid-row: 1;
 }
 
-#pay, .payContainer{
+.pay, .payContainer{
     grid-column: 2;
     grid-row: 1;
 }
 
-#pay{
+.pay{
     position: relative;
     left: 10px;
 }
 
-#list-img{
+.list-img{
     width: 150px;
     height: 100px;
 }
@@ -259,7 +259,7 @@ hr{
     }
 }
 
-#quantity {
+.quantity {
     height: 34px;
     width: 50px;
     border-radius: 5px;
