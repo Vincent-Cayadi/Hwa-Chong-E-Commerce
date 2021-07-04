@@ -32,7 +32,7 @@ July-August: Confirm the payment and delivery method
 :heavy_exclamation_mark:Server/Backend stuff <br>
 :x: :heavy_exclamation_mark:Code refactor <br>
 
-:x: Add to cart page <br>
+✔️: Add to cart page <br>
 <h1 align="center">Bugs to fix</h1>
 <img src="bugsImages/Untitled.png">
 Product card on hover covers Navbar
