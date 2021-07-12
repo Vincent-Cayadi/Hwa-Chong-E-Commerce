@@ -350,8 +350,7 @@ function updateCartPage(){
 
         var listTrash = document.createElement('i');
         listTrash.setAttribute('class','fa fa-trash ');
-        listTrash.setAttribute('id','remove' + cart.id);
-        listTrash.setAttribute('class','remove');
+        listTrash.setAttribute('id','remove');
         tempCart.appendChild(listTrash);
 
         totalAmount = totalAmount + cart.price*temp_quantity;
