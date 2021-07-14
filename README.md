@@ -27,12 +27,14 @@ July-August: Confirm the payment and delivery method
 :heavy_check_mark: User Account Page<br>
 :heavy_check_mark: Add to cart feature - usage of cookies <br>
 :heavy_check_mark: Redesigning the card item <br>
+✔️: Add to cart page <br>
 <hr>
 
 :heavy_exclamation_mark:Server/Backend stuff <br>
-:x: :heavy_exclamation_mark:Code refactor <br>
+:heavy_exclamation_mark:Code refactor <br>
+:heavy_exclamation_mark:Support for different screen devices <br>
 
-✔️: Add to cart page <br>
+
 <h1 align="center">Bugs to fix</h1>
 <img src="bugsImages/Untitled.png">
 Product card on hover covers Navbar
