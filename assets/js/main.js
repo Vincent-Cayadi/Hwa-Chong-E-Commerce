@@ -268,47 +268,6 @@ if(cartObj != "") {
 }
 // let cartList=[]; 
 
-function ready() {
-    var quantityInputs = document.getElementsByClassName('quantity');
-
-    for (var i = 0; i < quantityInputs.length; ++i){
-        quantityInputs[i].addEventListener('change', quantityChanged)
-    }
-}
-
-function quantityChanged(event) {
-    var quantityInput = event.target
-    if (isNaN(quantityInput.value) || quantityInput.value <= 0) {
-        quantityInput.value = 1
-    }
-    var id = quantityInput.parentNode.id;
-    var price = document.getElementById('pay' + id).innerHTML;
-    document.getElementById('totalPrice' + id).innerHTML = price * quantityInput.value;
-
-    updateTotal()
-}
-
-// Updates total information in the bottom-left panel.
-function updateTotal(){
-    var quantityInputs = document.getElementsByClassName('quantity');
-    var prices = document.getElementsByClassName('totalPrice');
-
-    var totalCount = 0, totalPrice = 0;
-    for (var i = 0; i < quantityInputs.length; ++i) {
-        console.log(quantityInputs[i].value);
-        totalCount += parseInt(quantityInputs[i].value);
-    }
-    for (var i = 0; i < prices.length; ++i) {
-        console.log(prices[i].innerHTML);
-        totalPrice += parseFloat(prices[i].innerHTML);
-    }
-
-    document.getElementById('total-items').innerHTML = totalCount;
-    document.getElementById('total-amount').innerHTML = totalPrice;
-}
-
-
-
 var i;
 var detail =document.getElementsByClassName('card-item');
 var detailsImg = document.getElementById('details-img')
@@ -412,6 +371,46 @@ function hideCart(){
     document.getElementById('main').style.display= "block";
     document.getElementById('cart-container').style.display= "none";
 }
+
+function ready() {
+    var quantityInputs = document.getElementsByClassName('quantity');
+
+    for (var i = 0; i < quantityInputs.length; ++i){
+        quantityInputs[i].addEventListener('change', quantityChanged)
+    }
+}
+
+function quantityChanged(event) {
+    var quantityInput = event.target
+    if (isNaN(quantityInput.value) || quantityInput.value <= 0) {
+        quantityInput.value = 1
+    }
+    var id = quantityInput.parentNode.id;
+    var price = document.getElementById('pay' + id).innerHTML;
+    document.getElementById('totalPrice' + id).innerHTML = price * quantityInput.value;
+
+    updateTotal()
+}
+
+// Updates total information in the bottom-left panel.
+function updateTotal(){
+    var quantityInputs = document.getElementsByClassName('quantity');
+    var prices = document.getElementsByClassName('totalPrice');
+
+    var totalCount = 0, totalPrice = 0;
+    for (var i = 0; i < quantityInputs.length; ++i) {
+        console.log(quantityInputs[i].value);
+        totalCount += parseInt(quantityInputs[i].value);
+    }
+    for (var i = 0; i < prices.length; ++i) {
+        console.log(prices[i].innerHTML);
+        totalPrice += parseFloat(prices[i].innerHTML);
+    }
+
+    document.getElementById('total-items').innerHTML = totalCount;
+    document.getElementById('total-amount').innerHTML = totalPrice;
+}
+
 
 var totalAmount;
 var totalItems;
