@@ -1,122 +1,264 @@
 data= [
     {
         id : 0,
-        img : '/Website-Backup/assets/images/Jacket.jpg',
+        img : '/productImages/Aphelion Jacket.jpeg',
         name : 'Aphelion Jacket',
         price : 10,
         save : 0,
         delievery : 'In 3 - 4 days',
-        itemInCart: false
+        itemInCart: false,
+        description: 'Aphelion Jacket'
     },
     {
         id : 1,
-        img : '/Website-Backup/assets/images/Jacket.jpg',
+        img : '/productImages/Ispark Jacket.jpeg',
         name : 'Ispark Jacket',
         price : 10,
         save : 0,
         delievery : 'In 3 - 4 days',
-        itemInCart: false
+        itemInCart: false,
+        description: 'Ispark Jacket'
     },
     {
         id : 2,
-        img : '/Website-Backup/assets/images/Jacket.jpg',
+        img : '/productImages/Ortus Jacket.jpeg',
         name : 'Ortus Jacket',
         price : 10,
         save : 0,
         delievery : 'In 3 - 4 days',
-        itemInCart: false
+        itemInCart: false,
+        description: 'Ortus Jacket'
     },
     {
         id : 3,
-        img : '/Website-Backup/assets/images/Jacket.jpg',
+        img : '/productImages/ProEd Jacket.jpg',
         name : 'ProEd Jacket',
         price : 10,
         save : 0,
         delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 4,
-        img : '/Website-Backup/assets/images/Jacket.jpg',
-        name : 'Aphelion Jacket',
-        price : 10,
-        save : 0,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 5,
-        img : '/Website-Backup/assets/images/Jacket.jpg',
-        name : 'Ispark Jacket',
-        price : 10,
-        save : 0,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 6,
-        img : '/Website-Backup/assets/images/Jacket.jpg',
-        name : 'Ortus Jacket',
-        price : 10,
-        save : 0,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 7,
-        img : '/Website-Backup/assets/images/Jacket.jpg',
-        name : 'ProEd Jacket',
-        price : 10,
-        save : 0,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 8,
-        img : '/Website-Backup/assets/images/Jacket.jpg',
-        name : 'Aphelion Jacket',
-        price : 10,
-        save : 0,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 9,
-        img : '/Website-Backup/assets/images/Jacket.jpg',
-        name : 'Ispark Jacket',
-        price : 10,
-        save : 0,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 10,
-        img : '/Website-Backup/assets/images/Jacket.jpg',
-        name : 'Ortus Jacket',
-        price : 10,
-        save : 0,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 11,
-        img : '/Website-Backup/assets/images/Jacket.jpg',
-        name : 'ProEd Jacket',
-        price : 10,
-        save : 0,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
-    },
-    {
-        id : 12,
-        img : '/Website-Backup/assets/images/Jacket.jpg',
-        name : 'Aphelion Jacket',
-        price : 10,
-        save : 0,
-        delievery : 'In 3 - 4 days',
-        itemInCart: false
+        itemInCart: false,
+        description: 'ProEd Jacket'
     },
     
+    {
+        id : 4,
+        img : '/productImages/Aphelion Bottle.jpg',
+        name : 'Aphelion Bottle',
+        price : 5,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'Aphelion Bottle'
+    },
+
+    {
+        id : 5,
+        img : '/productImages/Aphelion Backpack.jpg',
+        name : 'Aphelion Backpack',
+        price : 20,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'Aphelion Backpack'
+    },
+
+    {
+        id : 6,
+        img : '/productImages/Aphelion T Shirt.jpg',
+        name : 'Aphelion T Shirt',
+        price : 10,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'Aphelion T Shirt'
+    },
+
+    {
+        id : 7,
+        img : '/productImages/ProEd Bottle.jpg',
+        name : 'ProEd Bottle',
+        price : 5,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'ProEd Bottle'
+    },
+    
+    {
+        id : 8,
+        img : '/productImages/ProEd Backpack.jpg',
+        name : 'ProEd Backpack',
+        price : 20,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'ProEd Backpack'
+    },
+
+    {
+        id : 9,
+        img : '/productImages/ProEd Shirt.jpeg',
+        name : 'ProEd T Shirt',
+        price : 10,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'ProEd T Shirt'
+    },
+
+    {
+        id : 10,
+        img : '/productImages/Ortus Bottle.jpg',
+        name : 'Ortus Bottle',
+        price : 5,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'Ortus Bottle'
+    },
+
+    {
+        id : 11,
+        img : '/productImages/Ortus Backpack.jpg',
+        name : 'Ortus Backpack',
+        price : 20,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'Ortus Backpack'
+    },
+
+    {
+        id : 12,
+        img : '/productImages/Ortus T Shirt.jpg',
+        name : 'Ortus T Shirt',
+        price : 10,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'Ortus T Shirt'
+    },
+
+    {
+        id : 13,
+        img : '/productImages/Ispark Bottle.jpg',
+        name : 'Ispark Bottle',
+        price : 5,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'Ispark Bottle'
+    },
+
+    {
+        id : 14,
+        img : '/productImages/Ispark Backpack.jpg',
+        name : 'Ispark Backpack',
+        price : 20,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'Ispark Backpack'
+    },
+
+    {
+        id : 15,
+        img : '/productImages/Ispark T Shirt.jpg',
+        name : 'Ispark T Shirt',
+        price : 10,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'Ispark T Shirt'
+    },
+
+    {
+        id : 16,
+        img : '/productImages/Aphelion File.jpg',
+        name : 'Aphelion File',
+        price : 7,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'Aphelion File'
+    },
+
+    {
+        id : 17,
+        img : '/productImages/Aphelion Pencil Case.jpg',
+        name : 'Aphelion Pencil Case',
+        price : 3,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'Aphelion Pencil Case'
+    },
+
+    {
+        id : 18,
+        img : '/productImages/ProEd File.jpg',
+        name : 'ProEd File',
+        price : 7,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'ProEd File'
+    },
+
+    {
+        id : 19,
+        img : '/productImages/ProEd Pencil Case.jpg',
+        name : 'ProEd Pencil Case',
+        price : 3,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'ProEd Pencil Case'
+    },
+
+    {
+        id : 20,
+        img : '/productImages/Ortus File.jpg',
+        name : 'Ortus File',
+        price : 7,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'Ortus File'
+    },
+
+    {
+        id : 21,
+        img : '/productImages/Ortus Pencil Case.jpg',
+        name : 'Ortus Pencil Case',
+        price : 3,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'Ortus Pencil Case'
+    },
+
+    {
+        id : 22,
+        img : '/productImages/Ispark File.jpg',
+        name : 'Ispark File',
+        price : 7,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'Ispark File'
+    },
+
+    {
+        id : 23,
+        img : '/productImages/Ispark Pencil Case.jpg',
+        name : 'Ispark Pencil Case',
+        price : 3,
+        save : 0,
+        delievery : 'In 3 - 4 days',
+        itemInCart: false,
+        description: 'Ispark Pencil Case'
+    },
 ];
 
 cartObj = getCookie("cart");
@@ -172,6 +314,7 @@ var detail =document.getElementsByClassName('card-item');
 var detailsImg = document.getElementById('details-img')
 var detailTitle = document.getElementById('detail-title')
 var detailPrice = document.getElementById('detail-price')
+var detailDescription = document.getElementById('detail-description')
 var detailsPage = document.getElementById('details-page');
 var back = document.getElementById('buy')
 back.addEventListener('click',refreshPage)
@@ -212,6 +355,7 @@ function handleDetail(e){
     detailsImg.src= data[getId].img;
     detailTitle.innerHTML=   data[getId].name;
     detailPrice.innerHTML= 'Price : $ ' +data[getId].price;
+    detailDescription.innerHTML = 'Description:' +data[getId].description;
 }
 
 function getCookie(cname) {
