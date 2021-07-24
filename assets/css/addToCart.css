@@ -164,6 +164,11 @@
     grid-area: 1 / 1 / 2 / 2;
 }
 
+#remove{
+    width: min-content;
+    height: min-content;
+}
+
 .totalPrice{
     position: relative;
     left: 10px;
