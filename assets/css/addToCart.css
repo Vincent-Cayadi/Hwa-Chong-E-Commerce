@@ -167,6 +167,7 @@
 #remove{
     width: min-content;
     height: min-content;
+    color: red;
 }
 
 .totalPrice{
@@ -280,5 +281,4 @@ hr{
 .payment{
     padding: 2px 10px;
     font-size: 18px;
-    cursor: not-allowed;
 }

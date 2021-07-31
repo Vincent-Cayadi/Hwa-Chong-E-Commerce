@@ -4,10 +4,12 @@ data= [
         img : '/productImages/Aphelion Jacket.jpeg',
         name : 'Aphelion Jacket',
         price : 10,
-        save : 0,
-        delievery : 'In 3 - 4 days',
+        save: 0,
+        delievery : 'Aphelion Jacket',
+        sizeInPage : true ,
+        sizeselected: 0,
         itemInCart: false,
-        description: 'Aphelion Jacket'
+
     },
     {
         id : 1,
@@ -15,9 +17,11 @@ data= [
         name : 'Ispark Jacket',
         price : 10,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'Ispark Jacket',
+        sizeInPage : true ,
+        sizeselected: 0,
         itemInCart: false,
-        description: 'Ispark Jacket'
+
     },
     {
         id : 2,
@@ -25,9 +29,11 @@ data= [
         name : 'Ortus Jacket',
         price : 10,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'Ortus Jacket',
+        sizeInPage : true ,
+        sizeselected: 0,
         itemInCart: false,
-        description: 'Ortus Jacket'
+
     },
     {
         id : 3,
@@ -35,9 +41,10 @@ data= [
         name : 'ProEd Jacket',
         price : 10,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'ProEd Jacket',
+        sizeInPage : true ,
+        sizeselected: 0,
         itemInCart: false,
-        description: 'ProEd Jacket'
     },
     
     {
@@ -46,9 +53,8 @@ data= [
         name : 'Aphelion Bottle',
         price : 5,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'Aphelion Bottle',
         itemInCart: false,
-        description: 'Aphelion Bottle'
     },
 
     {
@@ -57,9 +63,9 @@ data= [
         name : 'Aphelion Backpack',
         price : 20,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'Aphelion Backpack',
         itemInCart: false,
-        description: 'Aphelion Backpack'
+
     },
 
     {
@@ -68,9 +74,11 @@ data= [
         name : 'Aphelion T Shirt',
         price : 10,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'Aphelion T Shirt',
+        sizeInPage : true ,
+        sizeselected: 0,
         itemInCart: false,
-        description: 'Aphelion T Shirt'
+
     },
 
     {
@@ -79,9 +87,8 @@ data= [
         name : 'ProEd Bottle',
         price : 5,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'ProEd Bottle',
         itemInCart: false,
-        description: 'ProEd Bottle'
     },
     
     {
@@ -90,9 +97,8 @@ data= [
         name : 'ProEd Backpack',
         price : 20,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'ProEd Backpack',
         itemInCart: false,
-        description: 'ProEd Backpack'
     },
 
     {
@@ -101,9 +107,10 @@ data= [
         name : 'ProEd T Shirt',
         price : 10,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'ProEd T Shirt',
+        sizeInPage : true ,
+        sizeselected: 0,
         itemInCart: false,
-        description: 'ProEd T Shirt'
     },
 
     {
@@ -112,9 +119,8 @@ data= [
         name : 'Ortus Bottle',
         price : 5,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'Ortus Bottle',
         itemInCart: false,
-        description: 'Ortus Bottle'
     },
 
     {
@@ -123,9 +129,8 @@ data= [
         name : 'Ortus Backpack',
         price : 20,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'Ortus Backpack',
         itemInCart: false,
-        description: 'Ortus Backpack'
     },
 
     {
@@ -134,9 +139,10 @@ data= [
         name : 'Ortus T Shirt',
         price : 10,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'Ortus T Shirt',
+        sizeInPage : true ,
+        sizeselected: 0,
         itemInCart: false,
-        description: 'Ortus T Shirt'
     },
 
     {
@@ -145,9 +151,8 @@ data= [
         name : 'Ispark Bottle',
         price : 5,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'Ispark Bottle',
         itemInCart: false,
-        description: 'Ispark Bottle'
     },
 
     {
@@ -156,9 +161,9 @@ data= [
         name : 'Ispark Backpack',
         price : 20,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'Ispark Backpack',
         itemInCart: false,
-        description: 'Ispark Backpack'
+
     },
 
     {
@@ -167,9 +172,10 @@ data= [
         name : 'Ispark T Shirt',
         price : 10,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'Ispark T Shirt',
+        sizeInPage : true ,
+        sizeselected: 0,
         itemInCart: false,
-        description: 'Ispark T Shirt'
     },
 
     {
@@ -178,9 +184,8 @@ data= [
         name : 'Aphelion File',
         price : 7,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'Aphelion File',
         itemInCart: false,
-        description: 'Aphelion File'
     },
 
     {
@@ -189,9 +194,9 @@ data= [
         name : 'Aphelion Pencil Case',
         price : 3,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'Aphelion Pencil Case',
         itemInCart: false,
-        description: 'Aphelion Pencil Case'
+
     },
 
     {
@@ -200,9 +205,8 @@ data= [
         name : 'ProEd File',
         price : 7,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'ProEd File',
         itemInCart: false,
-        description: 'ProEd File'
     },
 
     {
@@ -211,9 +215,8 @@ data= [
         name : 'ProEd Pencil Case',
         price : 3,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'ProEd Pencil Case',
         itemInCart: false,
-        description: 'ProEd Pencil Case'
     },
 
     {
@@ -222,9 +225,9 @@ data= [
         name : 'Ortus File',
         price : 7,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'Ortus File',
         itemInCart: false,
-        description: 'Ortus File'
+
     },
 
     {
@@ -233,9 +236,8 @@ data= [
         name : 'Ortus Pencil Case',
         price : 3,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'Ortus Pencil Case',
         itemInCart: false,
-        description: 'Ortus Pencil Case'
     },
 
     {
@@ -244,9 +246,8 @@ data= [
         name : 'Ispark File',
         price : 7,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'Ispark File',
         itemInCart: false,
-        description: 'Ispark File'
     },
 
     {
@@ -255,9 +256,8 @@ data= [
         name : 'Ispark Pencil Case',
         price : 3,
         save : 0,
-        delievery : 'In 3 - 4 days',
+        delievery : 'Ispark Pencil Case',
         itemInCart: false,
-        description: 'Ispark Pencil Case'
     },
 ];
 
@@ -274,6 +274,7 @@ var detailsImg = document.getElementById('details-img')
 var detailTitle = document.getElementById('detail-title')
 var detailPrice = document.getElementById('detail-price')
 var detailDescription = document.getElementById('detail-description')
+var detailSize = document.getElementById('detail-size')
 var detailsPage = document.getElementById('details-page');
 var back = document.getElementById('buy')
 back.addEventListener('click',refreshPage)
@@ -314,7 +315,13 @@ function handleDetail(e){
     detailsImg.src= data[getId].img;
     detailTitle.innerHTML=   data[getId].name;
     detailPrice.innerHTML= 'Price : $ ' +data[getId].price;
-    detailDescription.innerHTML = 'Description:' +data[getId].description;
+    detailDescription.innerHTML = 'Description:' +data[getId].delievery;
+    if (data[getId].sizeInPage == true){
+        detailSize.style.display = 'block'
+    }
+    else{
+        detailSize.style.display = 'none'
+    }
 }
 
 function getCookie(cname) {
@@ -340,8 +347,12 @@ function updateCookie() {
 
 // add item to the cart
 function addToCart(id) {
+    data[id].sizeselected = document.getElementById("detail-size").options.selectedIndex
+    if((data[id].sizeselected == 0) && (data[id].sizeInPage == true)){
+        alert("Did not choose size!")
+        addToCart()
+    }
     if(!data[id].itemInCart){
-        // cartList= [...cartList,data[id]];
         alert('Item Added to Your Cart')
     }
     else{
@@ -488,7 +499,19 @@ function updateCartPage(){
 
         var listName = document.createElement('h3');
         listName.setAttribute('class','list-name');
-        listName.innerHTML = cart.name;
+        if (data[cart.id].sizeselected == 1){
+            listName.innerHTML = cart.name + " S";
+        }
+        else if (data[cart.id].sizeselected == 2){
+            listName.innerHTML = cart.name + " M";
+        }
+        else if (data[cart.id].sizeselected == 3){
+            listName.innerHTML = cart.name + " L";
+        }
+        else{
+            listName.innerHTML = cart.name;
+        }
+
         tempCart.appendChild(listName)
 
         var listTrash = document.createElement('i');
@@ -497,7 +520,6 @@ function updateCartPage(){
         tempCart.appendChild(listTrash);
 
         totalAmount = totalAmount + cart.price*temp_quantity;
-        totalSaving = totalSaving + cart.save;
         totalItems = totalItems + temp_quantity;
         cartCont.appendChild(tempCart) 
     })
@@ -505,7 +527,6 @@ function updateCartPage(){
     document.getElementById('total-amount').innerHTML = totalAmount;
     document.getElementById('total-items-container').innerHTML = 'Total Items : '  
     document.getElementById('total-items').innerHTML = totalItems;
-    document.getElementById('you-saved').innerHTML = 'You Saved : $ ' + totalSaving;
     document.getElementById('total').style.display= "block";
     ready()
         
@@ -515,6 +536,7 @@ function updateCartPage(){
 //remove item from the cart, and then update cart page and cookie.
 function removeFromCart(itemId){
     data[itemId].itemInCart = false;
+    data[itemId].sizeselected = 0;
     // cartList = cartList.filter((list)=>list.id!=itemId);
     updateCartPage();
     updateCookie();

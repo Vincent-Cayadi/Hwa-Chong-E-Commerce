@@ -136,6 +136,12 @@
 							<h2 id="detail-title">Samsung Galaxy</h2>
 							<h4 id="detail-price">Price : Rs 9,999</h4>
 							<p id="detail-description">Item From HCI</p>
+							<select id="detail-size" style="display: none;">
+								<option value="0">Select Size:</option>
+    							<option value="1">Small</option>
+    							<option value="2">Medium</option>
+								<option value="3">Large</option>
+							</select>
 							<button id="carts">Add to Cart</button>
 							<button id="buy">Back</button>
 						</div>
@@ -161,7 +167,7 @@
 					<h3 id="total-items-container"></h3><h3 id="total-items"></h3>
 					<h2 id="total-amount-container"></h2><h3 id="total-amount"></h3>
 					<h3 id="you-saved"></h3>
-					<button class="payment">Pay</button>
+					<button class="payment" onclick="window.location.href='payment.html'">Pay</button>
 				</div>
 			</div>
 		</div>
