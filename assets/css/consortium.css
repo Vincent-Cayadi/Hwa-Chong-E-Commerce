@@ -1,5 +1,4 @@
 *{
-    font-size: 16px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
     margin: 0;
     padding: 0;
@@ -75,8 +74,16 @@
 }
 #detail-price{
     margin-top: 1.5rem;
-    color: rgb(199, 110, 110);
+    color: white;
     font-size: 1.5rem;
+}
+
+#detail-description, #detail-price{
+    color: white;
+}
+
+#detail-size{
+    font-size: 20px;
 }
 
 #you-save{
@@ -96,7 +103,7 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 1rem;
-    background: white;
+    background-color: #383D51;
     width: 60vw;
     height: 70vh;
     border-radius: 5px;
@@ -153,11 +160,14 @@
 /* cart list section*/
 #cart-container{
     display: none;
-    margin: 15% 5%;
+    margin: 15% 5% 0% 5%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
     min-height:300px;
     border-radius: 3px;
+    background-color: #383D51;
+    min-height: 300px;
+    color: white;
 }
 #cart-title{
     font-size: 3.5rem;
@@ -170,6 +180,8 @@
     margin-top: 4rem;
     text-align: center;
     font-size: larger;
+    color: white;
+    font-size: 2em;
 }
 
 #cart-with-items{
@@ -196,7 +208,7 @@
     margin-left:7%;
     position: relative;
     padding:0.5rem 1rem;
-    background: white;
+    background: #383D51;
     width:1234px;
 }
 .list-name,.quantity,#remove{
@@ -239,12 +251,12 @@
 }
 #total{
     display: none;
-    background: rgb(172, 191, 246);
+    background-color: #2A2C38;
     font-family: monospace;
     font-size: larger;
     padding: 1rem;
     padding-top: 6rem;
-    color: rgb(149, 51, 34);
+    color: white;
     letter-spacing: 0.1rem;
     margin-bottom: 1.5rem;
     text-align: center;
