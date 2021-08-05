@@ -10,9 +10,10 @@
 }
 
 .consortium a{
-    font-size: 24px;
-    color: black;
+    font-size: 30px;
+    color: white;
     text-decoration: underline;
+    text-decoration-color: #B8C2F6;
 }
 .item{
     display: flex;
