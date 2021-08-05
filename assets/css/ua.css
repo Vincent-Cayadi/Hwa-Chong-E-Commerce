@@ -6,7 +6,18 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: #2A2C38;
+}
+
+hr{
+  background-color: #B8C2F6;
+  height: 2px;
+  border: none;
+}
+
 .container{
+  color: white;
   border-style: none;
   width: 70%;
   margin: 24px auto;
