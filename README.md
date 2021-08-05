@@ -16,6 +16,7 @@ Today marks a significant day for this reporsitory our repo has officially been 
 	<li>HTML</li>
 	<li>CSS</li>
 	<li>JS</li>
+	<li>NodeJS</li>
 	<li>Auth0</li>
 	<li>MongoDB</li>
 	<li>Slick Carousel</li>
