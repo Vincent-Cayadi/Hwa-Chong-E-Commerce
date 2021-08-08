@@ -1,4 +1,4 @@
-SKU,product name ,productPictureSmall,productPictureNormal,productPictureLarge,description,tags,stock,price
+SKU,productName ,productPictureSmall,productPictureNormal,productPictureLarge,description,tags,stock,price
 0,Aphelion Jacket,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Aphelion%20Jacket.jpeg, ,Aphelion Jacket,,1E+14,10
 1,Ispark Jacket,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ispark%20Jacket.jpeg,,Ispark Jacket,,1E+14,10
 2,Ortus Jacket,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ortus%20Jacket.jpeg,,Ortus Jacket,,1E+14,10
