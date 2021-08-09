@@ -1,35 +1,28 @@
-const express = require("express");
-const app = express();
-const mongoose = require("mongoose");
-const bodyParser = require("body-parser");
-const ejs = require("ejs");
-var result;
+const express = require('express')
+const MongoClient = require('mongodb').MongoClient
 
-app.set('view engine', 'ejs');
+const app = express()
 
-mongoose.connect('mongodb+srv://user:user@thicc-boy-production.kbt6v.mongodb.net/productDB?retryWrites=true&w=majority', {useNewUrlParser:true, useUnifiedTopology: true});
+app.use(express.json())
+var database
 
-const productSchema = {
-    SKU : String,
-    productName : String,
-    productPicture : String,
-    description : String,
-    stock : String,
-    price : String
-}
+app.get('/',(req,resp) => {
+    resp.send('Welcome to MongoDB API')
+})
 
-const Movie = mongoose.model('Movie', productSchema);
-
-app.get('/',(req, res) => {
-    Movie.find({}, function(err, movies){
-        res.render('index',{
-            moviesList:movies
-        })
+app.get('/api/product',(req,resp) => {
+    database.collection('product').find({}).toArray((err,result) => {
+        if(err) throw err
+        resp.send(result)
     })
 })
 
-app.listen(4000, function(){
-    console.log('server is running on port 4000, yes it works');
+app.listen(4000, () => {
+    MongoClient.connect('mongodb+srv://user:user@thicc-boy-production.kbt6v.mongodb.net',{useNewUrlParser:true, useUnifiedTopology: true},(error, result) => {
+        if(error) throw error
+        database = result.db('productDB')
+        console.log('server is running on port 4000, yes it works')
+    })
 })
 
 //https://stackoverflow.com/questions/50448272/avoid-current-url-string-parser-is-deprecated-warning-by-setting-usenewurlpars - Current URL string parser is deprecated
