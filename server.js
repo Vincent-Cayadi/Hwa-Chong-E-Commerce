@@ -3,16 +3,22 @@ const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+var result;
 
 app.set('view engine', 'ejs');
 
-mongoose.connect('mongodb+srv://user:user@thicc-boy-production.kbt6v.mongodb.net/moviesDB?retryWrites=true&w=majority', {useNewUrlParser:true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://user:user@thicc-boy-production.kbt6v.mongodb.net/productDB?retryWrites=true&w=majority', {useNewUrlParser:true, useUnifiedTopology: true});
 
-const moviesSchema = {
-    title : String,
+const productSchema = {
+    SKU : String,
+    productName : String,
+    productPicture : String,
+    description : String,
+    stock : String,
+    price : String
 }
 
-const Movie = mongoose.model('Movie', moviesSchema);
+const Movie = mongoose.model('Movie', productSchema);
 
 app.get('/',(req, res) => {
     Movie.find({}, function(err, movies){

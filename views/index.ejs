@@ -8,8 +8,13 @@
 </head>
 <body>
     <%moviesList.forEach(movie => {%>
-        <p><%= movie.title %></p>
+        <p><%= movie.SKU %></p>
+        <p><%= movie.productName %></p>
+        <p><%= movie.productPicture %></p>
+        <p><%= movie.description %></p>
+        <p><%= movie.stock %></p>
+        <p><%= movie.price %></p>
     <%})%>
-    hello
+    <h1>hello</h1>
 </body>
 </html>

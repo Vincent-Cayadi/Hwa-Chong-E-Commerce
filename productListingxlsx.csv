@@ -1,25 +1,25 @@
-SKU,productName ,productPictureSmall,productPictureNormal,productPictureLarge,description,tags,stock,price
-0,Aphelion Jacket,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Aphelion%20Jacket.jpeg, ,Aphelion Jacket,,1E+14,10
-1,Ispark Jacket,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ispark%20Jacket.jpeg,,Ispark Jacket,,1E+14,10
-2,Ortus Jacket,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ortus%20Jacket.jpeg,,Ortus Jacket,,1E+14,10
-3,ProEd Jacket,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/ProEd%20Jacket.jpg,,ProEd Jacket,,1E+14,10
-4,Aphelion Bottle,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Aphelion%20Bottle.jpg,,Aphelion Bottle,,1E+14,5
-5,Aphelion Backpack,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Aphelion%20Backpack.jpg,,Aphelion Backpack,,1E+14,20
-6,Aphelion T Shirt,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Aphelion%20T%20Shirt.jpg,,Aphelion T Shirt,,1E+14,15
-7,ProEd Bottle,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/ProEd%20Bottle.jpg,,ProEd Bottle,,1E+14,5
-8,ProEd Backpack,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/ProEd%20Backpack.jpg,,ProEd Backpack,,1E+14,20
-9,ProEd Shirt,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/ProEd%20Shirt.jpeg,,ProEd Shirt,,1E+14,15
-10,Ortus Bottle,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ortus%20Bottle.jpg,,Ortus Bottle,,1E+14,5
-11,Ortus Backpack,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ortus%20Backpack.jpg,,Ortus Backpack,,1E+14,20
-12,Ortus T Shirt,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ortus%20T%20Shirt.jpg,,Ortus T Shirt,,1E+14,15
-13,Ispark Bottle,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ispark%20Bottle.jpg,,Ispark Bottle,,1E+14,5
-14,Ispark Backpack,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ispark%20Backpack.jpg,,Ispark Backpack,,1E+14,20
-15,Ispark T Shirt,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ispark%20T%20Shirt.jpg,,Ispark T Shirt,,1E+14,15
-16,Aphelion File,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Aphelion%20File.jpg,,Aphelion File,,1E+14,7
-17,Aphelion Pencil Case,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Aphelion%20Pencil%20Case.jpg,,Aphelion Pencil Case,,1E+14,3
-18,ProEd File ,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/ProEd%20File.jpg,,ProEd File ,,1E+14,7
-19,ProEd Pencil Case,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/ProEd%20Pencil%20Case.jpg,,ProEd Pencil Case,,1E+14,3
-20,Ortus File,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ortus%20File.jpg,,Ortus File,,1E+14,7
-21,Ortus Pencil Case,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ortus%20Pencil%20Case.jpg,,Ortus Pencil Case,,1E+14,3
-22,Ispark File,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ispark%20File.jpg,,Ispark File,,1E+14,7
-23,Ispark Pencil Case,,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ispark%20Pencil%20Case.jpg,,Ispark Pencil Case,,1E+14,3
+SKU,productName ,productPicture,description,stock,price
+1,Aphelion Backpack,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Aphelion%20Backpack.jpg,Aphelion Backpack,20,20
+2,Aphelion Bottle,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Aphelion%20Bottle.jpg,Aphelion Bottle,20,5
+3,Aphelion File,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Aphelion%20File.jpg,Aphelion File,20,7
+4,Aphelion Jacket,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Aphelion%20Jacket.jpeg,Aphelion Jacket,20,10
+5,Aphelion Pencil Case,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Aphelion%20Pencil%20Case.jpg,Aphelion Pencil Case,20,3
+6,Aphelion T Shirt,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Aphelion%20T%20Shirt.jpg,Aphelion T Shirt,20,15
+7,Ispark Backpack,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ispark%20Backpack.jpg,Ispark Backpack,20,20
+8,Ispark Bottle,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ispark%20Bottle.jpg,Ispark Bottle,20,5
+9,Ispark File,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ispark%20File.jpg,Ispark File,20,7
+10,Ispark Jacket,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ispark%20Jacket.jpeg,Ispark Jacket,20,10
+11,Ispark Pencil Case,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ispark%20Pencil%20Case.jpg,Ispark Pencil Case,20,3
+12,Ispark T Shirt,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ispark%20T%20Shirt.jpg,Ispark T Shirt,20,15
+13,Ortus Backpack,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ortus%20Backpack.jpg,Ortus Backpack,20,20
+14,Ortus Bottle,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ortus%20Bottle.jpg,Ortus Bottle,20,5
+15,Ortus File,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ortus%20File.jpg,Ortus File,20,7
+16,Ortus Jacket,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ortus%20Jacket.jpeg,Ortus Jacket,20,10
+17,Ortus Pencil Case,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ortus%20Pencil%20Case.jpg,Ortus Pencil Case,20,3
+18,Ortus T Shirt,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/Ortus%20T%20Shirt.jpg,Ortus T Shirt,20,15
+19,ProEd Backpack,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/ProEd%20Backpack.jpg,ProEd Backpack,20,20
+20,ProEd Bottle,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/ProEd%20Bottle.jpg,ProEd Bottle,20,5
+21,ProEd File ,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/ProEd%20File.jpg,ProEd File ,20,7
+22,ProEd Jacket,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/ProEd%20Jacket.jpg,ProEd Jacket,20,10
+23,ProEd Pencil Case,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/ProEd%20Pencil%20Case.jpg,ProEd Pencil Case,20,3
+24,ProEd Shirt,https://github.com/Vincent-Cayadi/Website-Backup/blob/main/productImages/ProEd%20Shirt.jpeg,ProEd Shirt,20,15
