@@ -3,6 +3,13 @@ const MongoClient = require('mongodb').MongoClient
 
 const app = express()
 
+const cors = require("cors")
+app.use(
+    cors({
+        origin:"*"
+    })
+)
+
 app.use(express.json())
 var database
 
