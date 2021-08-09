@@ -1,3 +1,12 @@
+const api_url = 'http://localhost:4000/api/product';
+async function getData(){
+    const response = await fetch(api_url);
+    const data = await response.json();
+    console.log(data);
+}
+
+getData();
+
 data= [
     {
         id : 0,
