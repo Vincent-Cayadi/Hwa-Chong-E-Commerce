@@ -1,3 +1,9 @@
+const cors = require("cors")
+app.use(
+    cors({
+        origin:"http://127.0.0.1:4000"
+    })
+)
 const api_url = 'http://localhost:4000/api/product';
 async function getData(){
     const response = await fetch(api_url);
