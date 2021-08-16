@@ -29,6 +29,7 @@
     "mongoose": "^5.13.0",
     "nodemon": "^2.0.12",
     "passport": "^0.4.1",
-    "passport-auth0": "^1.4.0"
+    "passport-auth0": "^1.4.0",
+    "sync-fetch": "^0.3.0"
   }
 }

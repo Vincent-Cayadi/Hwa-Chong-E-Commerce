@@ -8,19 +8,19 @@
 
 .aphelion{
     background: url("aphelion.png") no-repeat top center fixed;
-    background-size: 300px 100px cover;
+    background-size: 700px;
     height: 300px;
     width: 100%;
     margin: 0;
     padding: 0;
     color: white;
     text-align: center;
-    font-size: 50px;
+    font-size: 50px;    
 }
 
 .ortus{
     background: url("ortus.jpg") no-repeat top center fixed;
-    background-size: 300px 200px cover;
+    background-size: 300px , 200px , cover;
     height: 300px;
     width: 100%;
     margin: 0;
@@ -32,7 +32,7 @@
 
 .proed{
     background: url("proed.jpg") no-repeat top center fixed;
-    background-size: 300px 100px cover;
+    background-size: 300px , 100px , cover;
     height: 300px;
     width: 100%;
     margin: 0;
@@ -45,7 +45,6 @@
 
 .isuck{
     background: url("isuck.jpg") no-repeat top center fixed;
-    background-size: 300px 100px cover;
     height: 300px;
     width: 100%;
     margin: 0;
